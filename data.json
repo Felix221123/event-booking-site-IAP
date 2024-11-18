@@ -1,0 +1,66 @@
+{
+    "events": [
+        {
+            "id": "1",
+            "name": "NTU Design and Digital Arts Building Tour",
+            "description": "Designed by award-winning architects Hawkins Brown, and delivered by local architects CPMG, the new Design & Digital Arts Building will place Nottingham as a UK hub for film, television, animation, UX design, games design, graphic design and more. Please join CPMG architect Alex Walker for a look inside this incredible project, which has transformed the Nottingham skyline, and significantly enhanced the academic provision for design and digital arts students. He will deliver a presentation on the design process including the background, concept, specialist facilities and locational considerations, followed by a guided tour around the building, not generally open to the wider public.",
+            "date": {
+                "day": 18,
+                "month": "December",
+                "year": 2024
+            },
+            "time": "15:00 - 17:00 GMT",
+            "venue": {
+            "name": "Nottingham, UK",
+            "address": "42 Shakespeare Street Nottingham NG1 4BU"
+            },
+            "organizer": {
+            "name": "RIBA East Midlands",
+            "contact_info": null,
+            "follow_link": null
+            },
+            "ticket": {
+            "price": "FREE",
+            "currency": "USD"
+            },
+            "images": [
+            {
+                "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F883541943%2F2141257992653%2F1%2Foriginal.20241025-171741?w=600&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C136%2C1080%2C540&s=d3b1e74d8e883a1fc9c6d17f1e012421",
+                "alt": "NTU Design and Digital Arts Building Tour"
+            }
+            ],
+            "event_link": "https://www.eventbrite.co.uk/e/ntu-design-and-digital-arts-building-tour-tickets-1060144142669?aff=ebdssbcategorybrowse"
+        },
+        {
+            "id": "2",
+            "name": "Nottingham DS&AI Meetup",
+            "description": "Neil is a retired engineer involved with safety in the rail industry. Neil has several formal safety qualifications covering occupational safety and system safety. Neil has had a varied career with over forty years of rail experience, including over thirty years of safety experience. Neil has worked in research, manufacturing, Infrastructure Manager, and consultancy organisations. Neil has created safety analyses, judged and approved the analyses created by others and provided help and advice to the industry. Neil has held a number of senior positions including Head of Acceptance, Chair of System Review Panels, and Engineering Assurance Director.",
+            "date": {
+                "day": 14,
+                "month": "November",
+                "year": 2024
+            },
+            "time": "6:30 PM to 8:30 PM GMT",
+            "venue": {
+            "name": "Nottingham",
+            "address": "Fothergill House, 16 King Street"
+            },
+            "organizer": {
+            "name": "Ben W. and 3 others",
+            "contact_info": null,
+            "follow_link": null
+            },
+            "ticket": {
+            "price": "FREE",
+            "currency": "USD"
+            },
+            "images": [
+            {
+                "url": "https://secure.meetupstatic.com/photos/event/6/3/d/0/600_523345552.webp?w=384%201x,%20https://secure.meetupstatic.com/photos/event/6/3/d/0/600_523345552.webp?w=750%202x",
+                "alt": "Nottingham DS&AI Meetup"
+            }
+            ],
+            "event_link": "https://www.meetup.com/nottingham-artificial-intelligence-meetup/events/300975418/"
+        }
+    ]
+}
