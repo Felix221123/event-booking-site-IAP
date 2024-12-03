@@ -1,0 +1,12 @@
+{
+  "name": "eventbookingwebsite-urnettribe",
+  "version": "1.0.0",
+  "description": "UrNetTribe is an event booking website for course work, designed to connect students to employers around the world, whether in person or online",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "css": "npx tailwindcss -i ./tailwind.config/input.css -o ./tailwind.config/output.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

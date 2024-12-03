@@ -74,12 +74,20 @@ $deep-grey: #f1f1f1;
     font-size: clamp(2.5rem, 2.55vw, 2.6rem);
 }
 
+@mixin fontSize45px() {
+    font-size: clamp(2.8125rem, 2.85vw, 2.9rem);
+}
+
 @mixin fontSize50px() {
     font-size: clamp(3.125rem, 3.125vw, 3.13rem);
 }
 
 @mixin fontSize60px() {
     font-size: clamp(3.75rem, 3.76vw, 3.78rem);
+}
+
+@mixin fontSize96px() {
+    font-size: clamp(6rem, 6.15vw, 6.18rem);
 }
 
 @mixin Transbtnhovers() {
@@ -122,5 +130,49 @@ $deep-grey: #f1f1f1;
 @mixin hiddenElementOnMoreThan1440px() {
     @media (min-width: 1440px) {
         display: none;
+    }
+}
+
+
+// navbar container on mobile
+@mixin MenuContainer() {
+    position: fixed;
+    width: 72%;
+    height: 100%;
+    background-color: hsla(260, 60%, 24%, 0.04);
+    backdrop-filter: blur(40px);
+    -webkit-backdrop-filter: blur(40px);
+    top: 0;
+    right: 0;
+    overflow-y: auto;
+    z-index: 9999;
+
+    & #my-list-of-headers{
+        position: relative;
+        top: 20%;
+        display: flex;
+        flex-direction: column;
+        margin-left: clamp(2.5rem , 2.8vw , 3rem);
+        text-align: left;
+        row-gap: 1.5rem;
+        bottom: 5%;
+        
+
+        & li > a{
+            font-family: $poppins-font;
+            color: $deep-grey;
+            @include fontSize20px();
+        }
+
+    }
+
+    #close-tbn{
+        position: absolute;
+        top: 3%;
+        font-size: 2.5rem;
+        right: 10%;
+        color: rgba(43, 24, 77, 0.9);
+        cursor: pointer;
+
     }
 }

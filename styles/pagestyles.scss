@@ -1,0 +1,299 @@
+@import "./_base.scss";
+
+
+// mixins component
+
+
+// hero section for home
+@mixin Hero-Section-Home(){
+    width: 100%;
+    background-blend-mode: overlay;
+
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)); 
+        z-index: 0;
+    }
+    >  header > ,.btn-reserve,.greetings,h1 , nav {
+        position: relative;
+        z-index: 1;
+    }
+    
+
+    > header{
+        @include flexComp(row);
+        justify-content: space-between;
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)); 
+        padding: 1rem 2rem ;
+        position: fixed;
+        width: 100%;
+        top: 0; 
+        z-index: 99;
+
+        @media (min-width: 767px) {
+            padding: 2rem 3rem;
+            position: sticky;
+            top: 0; 
+        }
+
+        .logo{
+            font-family: $poppins-font;
+            @include fontSize18px();
+
+            @media (min-width: 767px) {
+                @include fontSize20px();
+            }
+
+            > .logo-name1{
+                color: $deep-grey;
+            }
+
+            > .logo-name2{
+                color: $pink-clr;
+            }
+        }
+
+        > .hamburger-menu{
+            @include hiddenElementOnMoreThan768px();
+        }
+
+        > nav, .btn-reserve {
+            @include hiddenElementOnLessThan767px();
+        }
+        > nav{
+            @media (max-width: 767px) {
+                @include MenuContainer();
+            }
+        }
+        > nav {
+            > #close-tbn{
+                @include hiddenElementOnMoreThan768px();
+            }
+            > #my-list-of-headers{
+                @media (min-width: 767px) {
+                    @include flexComp(row);
+                    gap: 3rem;
+
+                    > li > a{
+                        font-family: $poppins-font;
+                        @include fontSize16px();
+                        color: $white-clr;
+                        cursor: pointer;
+
+                        &:hover, :focus{
+                            color: $pink-clr;
+                            @include Transbtnhovers();
+                        }
+                    }
+                }
+            }
+            
+        }
+
+        > .btn-reserve{
+            @include fontSize13px();
+            border: 1px solid $white-clr;
+            background: transparent;
+            color: $white-clr;
+            padding: 1rem 2rem;
+            border-radius: .5rem;
+            font-family: $poppins-font;
+
+            &:hover, :focus{
+                background: $pink-clr;
+                color: $white-clr;
+                border: 1px solid $pink-clr;
+                @include Transbtnhovers();
+            }
+        }
+    }
+
+    > .greetings{
+        padding-top: 7rem;
+        text-align: center;
+        @include fontSize14px();
+        color: $deep-grey;
+        margin-bottom: 3rem;
+        font-family: $poppins-font;
+        
+        > .greetings-hr{
+            width: 10%;
+            height: 1px;
+            border: none;
+            margin: 0 auto;
+            background: linear-gradient(to right, $pink-clr, #ffffff);
+        }
+    }
+
+    > h1{
+        text-align: center;
+        @include fontSize45px();
+        padding: 0rem 2rem 4rem 2rem;
+        color: $white-clr;
+        font-family: $poppins-font;
+        line-height: 3.5rem;
+
+        @media (min-width: 767px) {
+            @include fontSize96px();
+            padding: 5% 15% 11% 15%;
+            line-height: 8rem;
+        }
+    }
+}
+
+
+// hero header section for contact
+@mixin Hero-Section-Contact(){
+    > header{
+        @include flexComp(row);
+        justify-content: space-between;
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)); 
+        padding: 1rem 2rem ;
+        position: fixed;
+        width: 100%;
+        top: 0; 
+        z-index: 99;
+
+        @media (min-width: 767px) {
+            padding: 2rem 3rem;
+            position: sticky;
+            top: 0; 
+        }
+
+        .logo{
+            font-family: $poppins-font;
+            @include fontSize18px();
+
+            @media (min-width: 767px) {
+                @include fontSize20px();
+            }
+
+            > .logo-name1{
+                color: $deep-grey;
+            }
+
+            > .logo-name2{
+                color: $pink-clr;
+            }
+        }
+
+        > .hamburger-menu{
+            @include hiddenElementOnMoreThan768px();
+        }
+
+        > nav, .btn-reserve {
+            @include hiddenElementOnLessThan767px();
+        }
+        > nav{
+            @media (max-width: 767px) {
+                @include MenuContainer();
+            }
+        }
+        > nav {
+            > #close-tbn{
+                @include hiddenElementOnMoreThan768px();
+            }
+            > #my-list-of-headers{
+                @media (min-width: 767px) {
+                    @include flexComp(row);
+                    gap: 3rem;
+
+                    > li > a{
+                        font-family: $poppins-font;
+                        @include fontSize16px();
+                        color: $white-clr;
+                        cursor: pointer;
+
+                        &:hover, :focus{
+                            color: $pink-clr;
+                            @include Transbtnhovers();
+                        }
+                    }
+                }
+            }
+            
+        }
+
+        > .btn-reserve{
+            @include fontSize13px();
+            border: 1px solid $white-clr;
+            background: transparent;
+            color: $white-clr;
+            padding: 1rem 2rem;
+            border-radius: .5rem;
+            font-family: $poppins-font;
+
+            &:hover, :focus{
+                background: $pink-clr;
+                color: $white-clr;
+                border: 1px solid $pink-clr;
+                @include Transbtnhovers();
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// main selectors
+.hero-section-home, .hero-section-events {
+    @include Hero-Section-Home();
+}
+
+.hero-section-contact{
+    @include Hero-Section-Contact();
+}

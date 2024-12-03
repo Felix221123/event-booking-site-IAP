@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- site head tag -->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+        <!-- portfolio / desktop icon -->
+        <link rel="icon" type="image/webp" sizes="32x32" href="./assets/img/portfolio-site-icon.webp">
+
+        <!-- jquery cdn -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js" integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <!-- tailwind css reset -->
+        <link rel="stylesheet" href="./tailwind.config/output.css">
+
+        <!-- custom css -->
+        <link rel="stylesheet" href="./styles/pagestyles.css">
+
+        <!---------------------- fontAwesome icons ---------------------->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css"/>
+
+
+        <!-- page title -->
+        <title>UrNetTribe | Home </title>
+    </head>
+
+    <!-- site main body -->
+    <body>
+        <main>
+            <!-- hero section -->
+            <section class="hero-section-home bg-no-repeat bg-center bg-cover w-full relative top-0" style="background-image: url(./assets/img/bg.jpg);">
+                <!-- header section -->
+                <header>
+                    <!-- logo -->
+                    <div class="logo font-bold"> <span class="logo-name1">Ur</span><span class="logo-name2">Net</span><span class="logo-name1">Tribe</span></div>
+                    <!-- navigation -->
+                    <nav>
+                        <div id="close-tbn" style="color: red;opacity: 0.7;">&times;</div>
+                        <ul id="my-list-of-headers">
+                            <li><a href="./index.html">Home</a></li>
+                            <li><a href="./pages/events.html">Event</a></li>
+                            <li><a href="./pages/contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <!-- event reservation button -->
+                    <button class="btn-reserve font-semibold uppercase cursor-pointer">
+                        <a href="./pages/events.html" >reservation</a>
+                    </button>
+                    <!-- hamburger menu -->
+                    <img src="./assets/svg/menu.svg" alt="menu button to open navigation" class="hamburger-menu">
+                </header>
+
+                <!-- greetings -->
+                <div class="greetings font-medium uppercase">
+                    <hr class="greetings-hr">
+                    <article>hello,new friend</article>
+                </div>
+
+                <!-- main header -->
+                <h1 class="uppercase font-bold">welcome to your next event</h1>
+            </section>
+
+            <!-- site event information section -->
+            <section class="event-info-section">
+                <!-- first row -->
+                <div class="zero-cost-event">
+                    <div class="textSection">
+                        <article>Zero cost for free events</article>
+                        <p class="description">Want to attend a free event? You won’t pay a pence. Ever.</p>
+                    </div>
+                    <div class="imgSection">
+                        <img src="./assets/svg/zero-cost-1.png.svg" alt="zero cost event image" class="zero-cost-img">
+                    </div>
+                </div>
+
+                <!-- second row -->
+                <div class="virtualEvents">
+                    <div class="textSection">
+                        <article>Seamless Virtual Event Hosting</article>
+                        <p class="description">Present memorable events online with our your favorite brand.</p>
+                    </div>
+                    <div class="imgSection">
+                        <img src="./assets/svg/zero-cost-1.png.svg" alt="zero cost event image" class="zero-cost-img">
+                    </div>
+                </div>
+            </section>
+
+            <!-- join these brands -->
+            <section class="join-these-brands">
+                <div class="sectionHeader">
+                    <h2>Join these brands</h2>
+                <p class="description">We've had the pleasure of working with industry-defining brands. These are just some of them.</p>
+                </div>
+                <div class="brandsImages">
+                    <img src="./assets/svg/microsoft.svg" alt="microsoft logo">
+                    <img src="./assets/svg/spotify-brand.svg" alt="spotify logo">
+                    <img src="./assets/svg/stripe.svg" alt="stripe logo">
+                    <img src="./assets/svg/uber.svg" alt="uber logo">
+                    <img src="./assets/svg/google.svg" alt=" google icon">
+                    <img src="./assets/svg/grab.svg" alt="grab logo">
+                    <img src="./assets/svg/medium.svg" alt="medium logo">
+                    <img src="./assets/svg/youtube.svg" alt="youtube logo">
+                </div>
+            </section>
+
+            <!-- blog section -->
+             <section class="blog">
+                <div class="blogSection">
+                    <div class="blogheader">
+                        <h2>Blog</h2>
+                        <p class="description">Check out some of our latest blog posts</p>
+                    </div>
+                    <div class="blogPosts">
+                        <!-- blog containers -->
+                         <div class="blogContainer">
+                            <img src="./assets/img/blogpost1.png" alt="blog post image-1">
+                            <p class="blogTitle">6 Strategies to Find Your Conference Keynote and Other Speakers</p>
+                            <p class="description">Planning a conference can be daunting, especially when it comes to finding the right keynote and other speakers. The right speakers set the tone for your event, captivate your audience, and ensure the success of your gathering.</p>
+                            <div class="dateOfPost">12 March 2024,Felix Baah</div>
+                         </div>
+                         <div class="blogContainer">
+                            <img src="./assets/img/blogpost2.png" alt="blog post image-2">
+                            <p class="blogTitle">How Successfully Used Paid Marketing to Drive Incremental Ticket Sales</p>
+                            <p class="description">Paid marketing is one of the most effective tools for increasing ticket sales, but it requires a well-executed strategy to make an impact.</p>
+                            <div class="dateOfPost">20 June 2024,Elmi Jordan</div>
+                         </div>
+                         <div class="blogContainer">
+                            <img src="./assets/img/blogpost3.png" alt="blog post image-3">
+                            <p class="blogTitle">Introducing Workspaces: Work Smarter, Not Harder with New Navigation</p>
+                            <p class="description">Efficiency in the workplace is essential. Introducing Workspaces, a navigation tool designed to simplify workflows and allow you to work smarter, not harder.                            </p>
+                            <div class="dateOfPost">12 March 2024,Clinton Benjamin</div>
+                         </div>
+                    </div>
+                </div>
+             </section>
+
+             <!-- footer section -->
+              <footer>
+                <div class="footerSection">
+                    <!-- first column -->
+                    <div class="logoSection">
+                        <div class="logo font-bold"> <span class="logo-name1">Ur</span><span class="logo-name2">Net</span><span class="logo-name1">Tribe</span></div>
+                        <p class="description">
+                            UrNetTribe is a global self-service ticketing platform for live events. We connect students, graduates, and professionals with employers across the world.
+                        </p>
+                        <div class="socialIcons">
+                            <img src="./assets/svg/facebook-icon.svg" alt="facebook icon">
+                            <img src="./assets/svg/twitter-icon.svg" alt="twitter icon">
+                            <img src="./assets/svg/linkedin-icon.svg" alt="linkedin icon">
+                        </div>
+                    </div>
+                    <!-- second column -->
+                    <div class="navLinks">
+                        <article>Links</article>
+                        <ul>
+                            <li><a href="./index.html">Home</a></li>
+                            <li><a href="./pages/events.html">Event</a></li>
+                            <li><a href="./pages/contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <!-- third column -->
+                     <div class="mailSection">
+                        <article>Stay in the loop</article>
+                        <p class="decription">Sign up for our newsletter to get the latest news and updates.</p>
+                        <div class="mailBox">
+                            <label for="emailAddress">
+                                <input type="text" id="emailAddress" placeholder="Email Address">
+                            </label>
+                            <button class="subscribe">Subscribe Now</button>
+                        </div>
+                        
+                     </div>
+                </div>
+              </footer>
+
+        </main>
+
+
+
+        <!-- javascript scripts -->
+        <script src="./js/scripts.js"></script>
+    </body>
+</html>
