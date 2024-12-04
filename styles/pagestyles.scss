@@ -1,14 +1,11 @@
 @import "./_base.scss";
 
-
 // mixins component
 
-
 // hero section for home
-@mixin Hero-Section-Home(){
+@mixin Hero-Section-Home() {
     width: 100%;
     background-blend-mode: overlay;
-
 
     &::after {
         content: "";
@@ -17,32 +14,29 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)); 
+        background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2));
         z-index: 0;
     }
-    >  header > ,.btn-reserve,.greetings,h1 , nav {
-        position: relative;
-        z-index: 1;
-    }
-    
 
-    > header{
+    > header {
         @include flexComp(row);
         justify-content: space-between;
-        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)); 
-        padding: 1rem 2rem ;
+        // background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+        background: $headerGlasmorphismClr;
+        padding: 1rem 2rem;
         position: fixed;
+        top: 0;
         width: 100%;
-        top: 0; 
-        z-index: 99;
+        z-index: 9;
 
-        @media (min-width: 767px) {
-            padding: 2rem 3rem;
-            position: sticky;
-            top: 0; 
+        @media (min-width: 768px) {
+            padding: 1.5rem 3rem;
+            background: $headerGlasmorphismClr;
+            backdrop-filter: blur(45px);
+            -webkit-backdrop-filter: blur(45px);
         }
 
-        .logo{
+        .logo {
             font-family: $poppins-font;
             @include fontSize18px();
 
@@ -50,62 +44,64 @@
                 @include fontSize20px();
             }
 
-            > .logo-name1{
+            > .logo-name1 {
                 color: $deep-grey;
             }
 
-            > .logo-name2{
+            > .logo-name2 {
                 color: $pink-clr;
             }
         }
 
-        > .hamburger-menu{
+        > .hamburger-menu {
             @include hiddenElementOnMoreThan768px();
         }
 
-        > nav, .btn-reserve {
+        > nav,
+        .btn-reserve {
             @include hiddenElementOnLessThan767px();
         }
-        > nav{
+        > nav {
             @media (max-width: 767px) {
                 @include MenuContainer();
             }
         }
         > nav {
-            > #close-tbn{
+            > #close-tbn {
                 @include hiddenElementOnMoreThan768px();
             }
-            > #my-list-of-headers{
+            > #my-list-of-headers {
                 @media (min-width: 767px) {
                     @include flexComp(row);
                     gap: 3rem;
 
-                    > li > a{
+                    > li > a {
                         font-family: $poppins-font;
                         @include fontSize16px();
                         color: $white-clr;
                         cursor: pointer;
 
-                        &:hover, :focus{
+                        &:hover,
+                        :focus {
                             color: $pink-clr;
                             @include Transbtnhovers();
                         }
                     }
                 }
             }
-            
         }
 
-        > .btn-reserve{
+        > .btn-reserve {
             @include fontSize13px();
             border: 1px solid $white-clr;
             background: transparent;
             color: $white-clr;
             padding: 1rem 2rem;
-            border-radius: .5rem;
+            border-radius: 0.5rem;
             font-family: $poppins-font;
 
-            &:hover, :focus{
+            &:hover,
+            :focus {
                 background: $pink-clr;
                 color: $white-clr;
                 border: 1px solid $pink-clr;
@@ -114,24 +110,29 @@
         }
     }
 
-    > .greetings{
+    > .greetings {
         padding-top: 7rem;
         text-align: center;
         @include fontSize14px();
         color: $deep-grey;
         margin-bottom: 3rem;
         font-family: $poppins-font;
-        
-        > .greetings-hr{
+
+        > .greetings-hr {
             width: 10%;
             height: 1px;
             border: none;
             margin: 0 auto;
             background: linear-gradient(to right, $pink-clr, #ffffff);
         }
+
+        @media (min-width: 768px) {
+            padding-top: 15rem;
+            @include fontSize18px();
+        }
     }
 
-    > h1{
+    > h1 {
         text-align: center;
         @include fontSize45px();
         padding: 0rem 2rem 4rem 2rem;
@@ -139,97 +140,103 @@
         font-family: $poppins-font;
         line-height: 3.5rem;
 
-        @media (min-width: 767px) {
+        @media (min-width: 768px) {
             @include fontSize96px();
-            padding: 5% 15% 11% 15%;
+            padding: 5% 15% 15% 15%;
             line-height: 8rem;
         }
     }
 }
 
-
 // hero header section for contact
-@mixin Hero-Section-Contact(){
-    > header{
+@mixin Hero-Section-Contact() {
+    > header {
         @include flexComp(row);
         justify-content: space-between;
-        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)); 
-        padding: 1rem 2rem ;
+        background: $headerGlasmorphismClr;
+        backdrop-filter: blur(40px);
+        -webkit-backdrop-filter: blur(40px);
+        padding: 1rem 2rem;
         position: fixed;
         width: 100%;
-        top: 0; 
+        top: 0;
         z-index: 99;
 
-        @media (min-width: 767px) {
-            padding: 2rem 3rem;
-            position: sticky;
-            top: 0; 
+        @media (min-width: 768px) {
+            padding: 1.5rem 3rem;
+            position: fixed;
+            top: 0;
+            background: $headerGlasmorphismClr;
+            backdrop-filter: blur(45px);
+            -webkit-backdrop-filter: blur(45px);
         }
 
-        .logo{
+        .logo {
             font-family: $poppins-font;
             @include fontSize18px();
 
-            @media (min-width: 767px) {
+            @media (min-width: 768px) {
                 @include fontSize20px();
             }
 
-            > .logo-name1{
+            > .logo-name1 {
                 color: $deep-grey;
             }
 
-            > .logo-name2{
+            > .logo-name2 {
                 color: $pink-clr;
             }
         }
 
-        > .hamburger-menu{
+        > .hamburger-menu {
             @include hiddenElementOnMoreThan768px();
         }
 
-        > nav, .btn-reserve {
+        > nav,
+        .btn-reserve {
             @include hiddenElementOnLessThan767px();
         }
-        > nav{
+        > nav {
             @media (max-width: 767px) {
                 @include MenuContainer();
             }
         }
         > nav {
-            > #close-tbn{
+            > #close-tbn {
                 @include hiddenElementOnMoreThan768px();
             }
-            > #my-list-of-headers{
-                @media (min-width: 767px) {
+            > #my-list-of-headers {
+                @media (min-width: 768px) {
                     @include flexComp(row);
                     gap: 3rem;
 
-                    > li > a{
+                    > li > a {
                         font-family: $poppins-font;
                         @include fontSize16px();
                         color: $white-clr;
                         cursor: pointer;
 
-                        &:hover, :focus{
+                        &:hover,
+                        :focus {
                             color: $pink-clr;
                             @include Transbtnhovers();
                         }
                     }
                 }
             }
-            
         }
 
-        > .btn-reserve{
+        > .btn-reserve {
             @include fontSize13px();
             border: 1px solid $white-clr;
             background: transparent;
             color: $white-clr;
             padding: 1rem 2rem;
-            border-radius: .5rem;
+            border-radius: 0.5rem;
             font-family: $poppins-font;
 
-            &:hover, :focus{
+            &:hover,
+            :focus {
                 background: $pink-clr;
                 color: $white-clr;
                 border: 1px solid $pink-clr;
@@ -239,41 +246,291 @@
     }
 }
 
+// event info section
+@mixin EventInfoSection() {
+    margin-top: 3.5rem;
+    margin-bottom: 3.5rem;
+    @include SectionPadding();
+    @include flex(column);
+    gap: 3rem;
 
+    @media screen and (min-width: 768px) {
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+    }
 
+    > .zero-cost-event,
+    .virtualEvents {
+        @include flex(column);
+        gap: 2rem;
+        align-items: center;
 
+        @media screen and (min-width: 768px) {
+            @include flex(row);
+            gap: 4rem;
+        }
 
+        > .textSection {
+            @include flexComp(column);
+            gap: 0.5rem;
+            align-items: flex-start;
 
+            > article {
+                @include fontSize24px();
+                font-family: $poppins-font;
+                color: $deep-indigo;
 
+                @media screen and (min-width: 768px) {
+                    @include fontSize40px();
+                    padding-right: 7rem;
+                }
+            }
 
+            > p.description {
+                @include fontSize14px();
+                color: $black-clr;
+                font-family: $poppins-font;
+            }
+        }
+    }
 
+    > .virtualEvents {
+        @media screen and (min-width: 768px) {
+            @include flex(row-reverse);
+        }
+    }
+}
 
+// join these brands
+@mixin JoinTheseBrands() {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    @include SectionPadding();
 
+    > .sectionHeader {
+        @include flexComp(column);
+        gap: 1rem;
+        font-family: $poppins-font;
 
+        > h2 {
+            @include fontSize32px();
+            color: $deep-indigo;
+        }
 
+        > p.description {
+            text-align: center;
+            @include fontSize14px();
+            color: $grey-clr;
 
+            @media screen and (min-width: 768px) {
+                padding: 0 30%;
+            }
+        }
+    }
 
+    > .brandsImages {
+        @include flexComp(row);
+        flex-wrap: wrap;
+        gap: 1.5rem;
+    }
+}
 
+// blog section
+@mixin BlogSection() {
+    @include SectionPadding();
+    margin-bottom: 10rem;
 
+    > .blogSection {
+        @include flexComp(column);
 
+        > .blogHeader {
+            @include flex(column);
+            gap: 0.5rem;
+            font-family: $poppins-font;
+            margin-bottom: 2.5rem;
 
+            > h3 {
+                @include fontSize32px();
+                color: $deep-indigo;
+                text-align: center;
+            }
+            > p.description {
+                @include fontSize14px();
+                color: $grey-clr;
+                text-align: center;
+            }
+        }
 
+        > .blogPosts {
+            @include flex(row);
+            flex-wrap: wrap;
+            gap: 2rem;
 
+            > .blogContainer {
+                width: 21.4375rem;
+                height: auto;
+                @include flex(column);
+                gap: 1rem;
+                font-family: $inter-font;
 
+                > .blogTitle {
+                    @include fontSize18px();
+                    color: $deep-indigo;
+                }
 
+                > .description {
+                    @include fontSize14px();
+                    color: $grey-clr;
+                }
 
+                > .dateOfPost {
+                    @include fontSize12px();
+                    color: $black-clr;
+                }
+            }
+        }
+    }
+}
 
+// footer section
+@mixin FooterSection() {
+    width: 100%;
+    background-color: $deep-indigo;
+    padding: 4rem 2rem;
 
+    @media screen and (min-width: 768px) {
+        padding: 6rem 3.5rem;
+    }
 
+    > .footerSection {
+        @include flex(column);
+        gap: 2.5rem;
 
+        @media screen and (min-width: 768px) {
+            @include flexComp(row);
+            justify-content: space-between;
+            align-items: flex-start;
 
+            > .logoSection, .navLinks, .mailSection{
+                max-width: 30%;
+            }
+        }
 
+        > .logoSection {
+            @include flex(column);
+            gap: 2rem;
 
+            > .logo {
+                font-family: $poppins-font;
+                @include fontSize18px();
 
+                @media (min-width: 767px) {
+                    @include fontSize20px();
+                }
 
+                > .logo-name1 {
+                    color: $deep-grey;
+                }
 
+                > .logo-name2 {
+                    color: $pink-clr;
+                }
+            }
+            > p.description {
+                @include fontSize14px();
+                color: $white-clr;
+                font-family: $poppins-font;
+            }
+            > .socialIcons {
+                @include flex(row);
+                gap: 1rem;
+            }
+        }
 
+        > .navLinks {
+            @include flex(column);
+            gap: 1rem;
+            font-family: $poppins-font;
 
+            > article {
+                @include fontSize24px();
+                color: $white-clr;
+            }
+            > ul {
+                @include flex(column);
+                gap: 0.5rem;
+                > li > a {
+                    color: $white-clr;
+                    @include fontSize14px();
+                    font-weight: 400;
+                }
+            }
+        }
+
+        > .mailSection {
+            @include flex(column);
+            gap: 1.5rem;
+
+            > article {
+                @include fontSize20px();
+                color: $white-clr;
+                font-family: $poppins-font;
+            }
+
+            > p.description {
+                @include fontSize13px();
+                color: $white-clr;
+                font-family: $poppins-font;
+            }
+
+            > .mailBox {
+                width: 100%;
+                height: 3.75rem;
+            }
+            .mailBox label {
+                position: relative;
+                display: flex;
+                align-items: center;
+                height: 100%;
+            }
+
+            .mailBox input {
+                width: 100%;
+                height: 100%;
+                border-radius: 5rem;
+                padding: 0.5rem 2.5rem;
+                border: none;
+                background-color: #f5f5f5;
+                color: #444;
+                padding: 0 20px;
+                font-size: 16px;
+                font-family: "Poppins", sans-serif;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                outline: none;
+            }
+
+            .mailBox button {
+                position: absolute;
+                right: 0;
+                height: 100%;
+                padding: 0 30px;
+                background-color: #ff3d73;
+                color: $white-clr;
+                font-family: $inter-font;
+                @include fontSize15px();
+                font-weight: 600;
+                border: none;
+                border-radius: 50px;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+            }
+
+            .mailBox button:hover {
+                background-color: #ff1a60;
+            }
+        }
+    }
+}
 
 
 
@@ -290,10 +547,27 @@
 
 
 // main selectors
-.hero-section-home, .hero-section-events {
+.hero-section-home,
+.hero-section-events {
     @include Hero-Section-Home();
 }
 
-.hero-section-contact{
+.hero-section-contact {
     @include Hero-Section-Contact();
+}
+
+.event-info-section {
+    @include EventInfoSection();
+}
+
+.join-these-brands {
+    @include JoinTheseBrands();
+}
+
+.blog {
+    @include BlogSection();
+}
+
+footer {
+    @include FooterSection();
 }

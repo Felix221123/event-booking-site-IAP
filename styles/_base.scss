@@ -12,6 +12,7 @@ $deep-indigo: #242565;
 $grey-clr: #6a6a6a;
 $pink-clr: #f5167e;
 $deep-grey: #f1f1f1;
+$headerGlasmorphismClr:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5));
 
 //components mixins here
 @mixin flex($direc) {
@@ -139,13 +140,13 @@ $deep-grey: #f1f1f1;
     position: fixed;
     width: 72%;
     height: 100%;
-    background-color: hsla(260, 60%, 24%, 0.04);
-    backdrop-filter: blur(40px);
-    -webkit-backdrop-filter: blur(40px);
+    background: hsla(260, 60%, 24%, 0.04);
+    backdrop-filter: blur(45px);
+    -webkit-backdrop-filter: blur(45px);
     top: 0;
     right: 0;
     overflow-y: auto;
-    z-index: 9999;
+    z-index: 9999999;
 
     & #my-list-of-headers{
         position: relative;
@@ -174,5 +175,17 @@ $deep-grey: #f1f1f1;
         color: rgba(43, 24, 77, 0.9);
         cursor: pointer;
 
+    }
+}
+
+
+// padding for sections
+@mixin SectionPadding() {
+    @media screen and (min-width: 768px) {
+        padding: 0rem 3rem;
+    }
+
+    @media screen and (max-width: 767px) {
+        padding: 0rem 2rem;
     }
 }
