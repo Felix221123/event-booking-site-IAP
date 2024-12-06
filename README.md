@@ -20,5 +20,5 @@ UrNetTribe is an event booking website for course work, designed to connect stud
 
 
 Links for more events later in the future 
-https://www.meetup.com/home/?suggested=true&source=EVENTS
-https://www.eventbrite.co.uk/
+https://www.eventbrite.co.uk/d/united-kingdom/student-events/?page=10
+ use this for more event event search 
