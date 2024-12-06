@@ -77,7 +77,7 @@
     position: fixed;
     width: 72%;
     height: 100%;
-    background: hsla(260, 60%, 24%, 0.04);
+    background: hsla(260, 60%, 24%, 0.4);
     backdrop-filter: blur(45px);
     -webkit-backdrop-filter: blur(45px);
     top: 0;
@@ -144,22 +144,38 @@
 }
 .hero-section-home > header > .btn-reserve,
 .hero-section-events > header > .btn-reserve {
-  font-size: clamp(0.8125rem, 0.82vw, 0.825rem);
-  border: 1px solid #ffffff;
-  background: transparent;
+  font-size: clamp(0.875rem, 0.88vw, 0.89rem);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25rem;
   color: #ffffff;
-  padding: 1rem 2rem;
-  border-radius: 0.5rem;
-  font-family: "Poppins", sans-serif;
+  font-family: "Inter", sans-serif;
 }
 .hero-section-home > header > .btn-reserve:hover,
 .hero-section-home > header > .btn-reserve :focus,
 .hero-section-events > header > .btn-reserve:hover,
 .hero-section-events > header > .btn-reserve :focus {
-  background: #f5167e;
-  color: #ffffff;
-  border: 1px solid #f5167e;
+  scale: 1.1;
   transition: 0.5s;
+}
+.hero-section-home > header > .font-size-controls,
+.hero-section-events > header > .font-size-controls {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  font-size: clamp(0.8125rem, 0.82vw, 0.825rem);
+  color: #FEFEFE;
+}
+@media screen and (min-width: 768px) {
+  .hero-section-home > header > .font-size-controls,
+  .hero-section-events > header > .font-size-controls {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    font-size: clamp(1.25rem, 1.25vw, 1.26rem);
+  }
 }
 .hero-section-home > .greetings,
 .hero-section-events > .greetings {
@@ -202,6 +218,23 @@
     line-height: 8rem;
   }
 }
+.hero-section-home > .header-event,
+.hero-section-events > .header-event {
+  text-align: center;
+  font-size: clamp(2.8125rem, 2.85vw, 2.9rem);
+  padding: 5rem 2rem 4rem 2rem;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  line-height: 3.5rem;
+}
+@media (min-width: 768px) {
+  .hero-section-home > .header-event,
+  .hero-section-events > .header-event {
+    font-size: clamp(6rem, 6.15vw, 6.18rem);
+    padding: 12% 15% 15% 15%;
+    line-height: 8rem;
+  }
+}
 
 .hero-section-contact > header {
   display: flex;
@@ -210,8 +243,6 @@
   align-items: center;
   justify-content: space-between;
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5));
-  backdrop-filter: blur(40px);
-  -webkit-backdrop-filter: blur(40px);
   padding: 1rem 2rem;
   position: fixed;
   width: 100%;
@@ -259,7 +290,7 @@
     position: fixed;
     width: 72%;
     height: 100%;
-    background: hsla(260, 60%, 24%, 0.04);
+    background: hsla(260, 60%, 24%, 0.4);
     backdrop-filter: blur(45px);
     -webkit-backdrop-filter: blur(45px);
     top: 0;
@@ -316,21 +347,40 @@
     transition: 0.5s;
   }
 }
+@media (min-width: 768px) {
+  .hero-section-contact > header > nav > .font-size-controls {
+    display: none;
+  }
+}
 .hero-section-contact > header > .btn-reserve {
-  font-size: clamp(0.8125rem, 0.82vw, 0.825rem);
-  border: 1px solid #ffffff;
-  background: transparent;
+  font-size: clamp(0.875rem, 0.88vw, 0.89rem);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25rem;
   color: #ffffff;
-  padding: 1rem 2rem;
-  border-radius: 0.5rem;
-  font-family: "Poppins", sans-serif;
+  font-family: "Inter", sans-serif;
 }
 .hero-section-contact > header > .btn-reserve:hover,
 .hero-section-contact > header > .btn-reserve :focus {
-  background: #f5167e;
-  color: #ffffff;
-  border: 1px solid #f5167e;
+  scale: 1.1;
   transition: 0.5s;
+}
+.hero-section-contact > header > .font-size-controls {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  font-size: clamp(0.8125rem, 0.82vw, 0.825rem);
+  color: #FEFEFE;
+}
+@media screen and (min-width: 768px) {
+  .hero-section-contact > header > .font-size-controls {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    font-size: clamp(1.25rem, 1.25vw, 1.26rem);
+  }
 }
 
 .event-info-section {
@@ -514,6 +564,203 @@
   color: #000000;
 }
 
+.contact-main-form {
+  padding: 7rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .contact-main-form {
+    padding: 12rem 5rem;
+  }
+}
+.contact-main-form > h2 {
+  font-size: clamp(2.1875rem, 2.19vw, 2.19rem);
+  color: #242565;
+  font-family: "Poppins", sans-serif;
+  text-align: left;
+  line-height: 2.5rem;
+}
+@media screen and (min-width: 768px) {
+  .contact-main-form > h2 {
+    font-size: clamp(3.75rem, 3.76vw, 3.78rem);
+    line-height: 4rem;
+    padding-right: 10%;
+  }
+}
+.contact-main-form > .contact-session > form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+.contact-main-form > .contact-session > form > .flexGroup {
+  display: flex;
+  flex-direction: row;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+}
+.contact-main-form > .contact-session > form > .flexGroup > .textContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 20rem;
+}
+.contact-main-form > .contact-session > form > .flexGroup > .textContainer > label {
+  font-size: clamp(0.9375rem, 0.94vw, 0.94rem);
+  font-family: "Inter", sans-serif;
+  color: #6a6a6a;
+  font-weight: 300;
+}
+.contact-main-form > .contact-session > form > .flexGroup > .textContainer > input {
+  width: 100%;
+  outline: none;
+  border-bottom: 1px solid #6a6a6a;
+  padding: 0.5rem 0.5rem 0.5rem 1rem;
+  font-size: clamp(0.9375rem, 0.94vw, 0.94rem);
+  font-family: "Inter", sans-serif;
+  color: #000000;
+  font-weight: 400;
+}
+.contact-main-form > .contact-session > form > .flexGroup > .textContainer > input[type=number]::-webkit-inner-spin-button,
+.contact-main-form > .contact-session > form > .flexGroup > .textContainer input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.contact-main-form > .contact-session > form > .flexGroup > .textContainer > input[type=number] {
+  -moz-appearance: textfield; /* For Firefox */
+}
+.contact-main-form > .contact-session > form > .message {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.contact-main-form > .contact-session > form > .message > label {
+  font-size: clamp(0.9375rem, 0.94vw, 0.94rem);
+  font-family: "Inter", sans-serif;
+  color: #6a6a6a;
+  font-weight: 300;
+}
+.contact-main-form > .contact-session > form > .message > textarea {
+  width: 90%;
+  outline: none;
+  border-bottom: 1px solid #6a6a6a;
+  padding: 1rem 0.5rem 1rem 1rem;
+  font-size: clamp(0.9375rem, 0.94vw, 0.94rem);
+  font-family: "Inter", sans-serif;
+  color: #000000;
+  font-weight: 400;
+}
+.contact-main-form > .contact-session > form > button {
+  margin-top: 2.5rem;
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  align-items: center;
+  border: none;
+  width: 15rem;
+  padding: 1.5rem 1.5rem;
+  background-color: #f5167e;
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+  font-size: clamp(0.9375rem, 0.94vw, 0.94rem);
+  font-weight: 600;
+  border-radius: 5rem;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.contact-main-form > .contact-session > form > button:hover {
+  background-color: #242565;
+  transition: 0.5s;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background: hsla(260, 60%, 24%, 0.1);
+  padding: 5rem 2rem;
+  backdrop-filter: blur(45px);
+  -webkit-backdrop-filter: blur(45px);
+}
+@media screen and (min-width: 768px) {
+  .contact-details {
+    padding: 8rem 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .contact-details > .container,
+  .contact-details .emailAddressSection,
+  .contact-details .phoneSection {
+    max-width: 30%;
+  }
+}
+.contact-details > .container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.contact-details > .container > article {
+  font-size: clamp(0.9375rem, 0.94vw, 0.94rem);
+  color: #000000;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+.contact-details > .container > h3 {
+  font-size: clamp(1.75rem, 1.78vw, 1.79rem);
+  color: #242565;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  line-height: 2.5rem;
+}
+@media screen and (min-width: 768px) {
+  .contact-details > .container > h3 {
+    font-size: clamp(2.5rem, 2.55vw, 2.6rem);
+    line-height: 3rem;
+  }
+}
+.contact-details > .emailAddressSection {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.contact-details > .emailAddressSection > p.email,
+.contact-details > .emailAddressSection p.mainEmail {
+  font-size: clamp(1.125rem, 1.13vw, 1.13rem);
+  font-weight: 600;
+  color: #000000;
+  font-family: "Poppins", sans-serif;
+}
+.contact-details > .emailAddressSection > p.hours {
+  font-size: clamp(0.9375rem, 0.94vw, 0.94rem);
+  font-weight: 400;
+  color: #000000;
+  font-family: "Inter", sans-serif;
+}
+.contact-details > .phoneSection {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.contact-details > .phoneSection > p.phone,
+.contact-details > .phoneSection p.num {
+  font-size: clamp(1.125rem, 1.13vw, 1.13rem);
+  font-weight: 600;
+  color: #000000;
+  font-family: "Poppins", sans-serif;
+}
+.contact-details > .phoneSection > p.hours {
+  font-size: clamp(0.9375rem, 0.94vw, 0.94rem);
+  font-weight: 400;
+  color: #000000;
+  font-family: "Inter", sans-serif;
+}
+
 footer {
   width: 100%;
   background-color: #242565;
@@ -538,7 +785,9 @@ footer > .footerSection {
     justify-content: space-between;
     align-items: flex-start;
   }
-  footer > .footerSection > .logoSection, footer > .footerSection .navLinks, footer > .footerSection .mailSection {
+  footer > .footerSection > .logoSection,
+  footer > .footerSection .navLinks,
+  footer > .footerSection .mailSection {
     max-width: 30%;
   }
 }

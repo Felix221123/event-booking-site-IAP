@@ -25,7 +25,6 @@
         <!---------------------- fontAwesome icons ---------------------->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css"/>
 
-
         <!-- page title -->
         <title>UrNetTribe | Home </title>
     </head>
@@ -48,10 +47,16 @@
                             <li><a href="./pages/contact.html">Contact</a></li>
                         </ul>
                     </nav>
-                    <!-- event reservation button -->
+                    <!-- user site customisation btn -->
                     <button class="btn-reserve font-semibold uppercase cursor-pointer">
-                        <a href="./pages/events.html" >reservation</a>
+                        Dark <img src="./assets/svg/moon.svg" alt="moon icon" id="dark-icon">
                     </button>
+                    <!-- font size controls -->
+                    <div class="font-size-controls">
+                        <button id="increase-font" class="font-control-btn">A+</button>
+                        <button id="reset-font" class="font-control-btn">A</button>
+                        <button id="decrease-font" class="font-control-btn">A-</button>
+                    </div>
                     <!-- hamburger menu -->
                     <img src="./assets/svg/menu.svg" alt="menu button to open navigation" class="hamburger-menu">
                 </header>
@@ -59,11 +64,11 @@
                 <!-- greetings -->
                 <div class="greetings font-medium uppercase">
                     <hr class="greetings-hr">
-                    <article>hello,new friend</article>
+                    <article class="dark-mode-clr">hello,new friend</article>
                 </div>
 
                 <!-- main header -->
-                <h1 class="uppercase font-bold">welcome to your next event</h1>
+                <h1 class="uppercase font-bold dark-mode-clr">welcome to your next event</h1>
             </section>
 
             <!-- site event information section -->
@@ -71,8 +76,8 @@
                 <!-- first row -->
                 <div class="zero-cost-event">
                     <div class="textSection">
-                        <article class="font-semibold">Zero cost for free events</article>
-                        <p class="description font-medium">Want to attend a free event? You won’t pay a pence. Ever.</p>
+                        <article class="dark-mode-clr font-semibold">Zero cost for free events</article>
+                        <p class="dark-mode-clr description font-medium">Want to attend a free event? You won’t pay a pence. Ever.</p>
                     </div>
                     <div class="imgSection">
                         <img src="./assets/svg/zero-cost-1.png.svg" alt="zero cost event image" class="zero-cost-img">
@@ -82,8 +87,8 @@
                 <!-- second row -->
                 <div class="virtualEvents">
                     <div class="textSection">
-                        <article class="font-semibold">Seamless Virtual Event Hosting</article>
-                        <p class="description font-medium">Present memorable events online with your favorite brand.</p>
+                        <article class="dark-mode-clr font-semibold">Seamless Virtual Event Hosting</article>
+                        <p class=" dark-mode-clr description font-medium">Present memorable events online with your favorite brand.</p>
                     </div>
                     <div class="imgSection">
                         <img src="./assets/svg/Host-virtual-events-1.png.svg" alt="zero cost event image" class="zero-cost-img">
@@ -94,8 +99,8 @@
             <!-- join these brands -->
             <section class="join-these-brands">
                 <div class="sectionHeader">
-                    <h2 class="font-semibold">Join these brands</h2>
-                    <p class="description">We've had the pleasure of working with industry-defining brands. These are just some of them.</p>
+                    <h2 class="font-semibold dark-mode-clr">Join these brands</h2>
+                    <p class="description dark-mode-clr">We've had the pleasure of working with industry-defining brands. These are just some of them.</p>
                 </div>
                 <div class="brandsImages">
                     <img src="./assets/svg/microsoft.svg" alt="microsoft logo">
@@ -114,28 +119,28 @@
              <section class="blog">
                 <div class="blogSection">
                     <div class="blogHeader">
-                        <h3 class="font-semibold">Blog</h3>
-                        <p class="description">Check out some of our latest blog posts</p>
+                        <h3 class="font-semibold dark-mode-clr">Blog</h3>
+                        <p class="description dark-mode-clr">Check out some of our latest blog posts</p>
                     </div>
                     <div class="blogPosts">
                         <!-- blog containers -->
                         <div class="blogContainer">
                             <img src="./assets/img/blogpost1.png" alt="blog post image-1">
-                            <p class="blogTitle cursor-pointer font-semibold">6 Strategies to Find Your Conference Keynote and Other Speakers</p>
-                            <p class="description">Planning a conference can be daunting, especially when it comes to finding the right keynote and other speakers. The right speakers set the tone for your event, captivate your audience, and ensure the success of your gathering.</p>
-                            <div class="dateOfPost font-semibold">12 March 2024,Felix Baah</div>
+                            <p class="blogTitle cursor-pointer font-semibold dark-mode-clr">6 Strategies to Find Your Conference Keynote and Other Speakers</p>
+                            <p class="description dark-mode-clr">Planning a conference can be daunting, especially when it comes to finding the right keynote and other speakers. The right speakers set the tone for your event, captivate your audience, and ensure the success of your gathering.</p>
+                            <div class="dateOfPost font-semibold dark-mode-clr">12 March 2024,Felix Baah</div>
                         </div>
                         <div class="blogContainer">
                             <img src="./assets/img/blogpost2.png" alt="blog post image-2">
-                            <p class="blogTitle cursor-pointer font-semibold">How Successfully Used Paid Marketing to Drive Incremental Ticket Sales</p>
-                            <p class="description">Paid marketing is one of the most effective tools for increasing ticket sales, but it requires a well-executed strategy to make an impact.</p>
-                            <div class="dateOfPost font-semibold">20 June 2024,Elmi Jordan</div>
+                            <p class="blogTitle dark-mode-clr cursor-pointer font-semibold">How Successfully Used Paid Marketing to Drive Incremental Ticket Sales</p>
+                            <p class="description dark-mode-clr">Paid marketing is one of the most effective tools for increasing ticket sales, but it requires a well-executed strategy to make an impact.</p>
+                            <div class="dateOfPost dark-mode-clr font-semibold">20 June 2024,Elmi Jordan</div>
                         </div>
                         <div class="blogContainer">
                             <img src="./assets/img/blogpost3.png" alt="blog post image-3">
-                            <p class="blogTitle cursor-pointer font-semibold">Introducing Workspaces: Work Smarter, Not Harder with New Navigation</p>
-                            <p class="description">Efficiency in the workplace is essential. Introducing Workspaces, a navigation tool designed to simplify workflows and allow you to work smarter, not harder.                            </p>
-                            <div class="dateOfPost font-semibold">12 March 2024,Clinton Benjamin</div>
+                            <p class="blogTitle dark-mode-clr cursor-pointer font-semibold">Introducing Workspaces: Work Smarter, Not Harder with New Navigation</p>
+                            <p class="description dark-mode-clr">Efficiency in the workplace is essential. Introducing Workspaces, a navigation tool designed to simplify workflows and allow you to work smarter, not harder.                            </p>
+                            <div class="dateOfPost font-semibold dark-mode-clr">12 March 2024,Clinton Benjamin</div>
                         </div>
                     </div>
                 </div>

@@ -92,20 +92,29 @@
         }
 
         > .btn-reserve {
-            @include fontSize13px();
-            border: 1px solid $white-clr;
-            background: transparent;
+            @include fontSize14px();
+            @include flexComp(row);
+            gap: 0.25rem;
             color: $white-clr;
-            padding: 1rem 2rem;
-            border-radius: 0.5rem;
-            font-family: $poppins-font;
+            font-family: $inter-font;
 
             &:hover,
             :focus {
-                background: $pink-clr;
-                color: $white-clr;
-                border: 1px solid $pink-clr;
+                scale: 1.1;
                 @include Transbtnhovers();
+            }
+        }
+
+        > .font-size-controls{
+            @include flex(row);
+            gap: 0.5rem;
+            @include fontSize13px();
+            color: $pureWhite;
+
+            @media screen and (min-width: 768px) {
+                @include flex(row);
+                gap: 1.5rem;
+                @include fontSize20px();
             }
         }
     }
@@ -146,6 +155,21 @@
             line-height: 8rem;
         }
     }
+
+    > .header-event{
+        text-align: center;
+        @include fontSize45px();
+        padding: 5rem 2rem 4rem 2rem;
+        color: $white-clr;
+        font-family: $poppins-font;
+        line-height: 3.5rem;
+
+        @media (min-width: 768px) {
+            @include fontSize96px();
+            padding: 12% 15% 15% 15%;
+            line-height: 8rem;
+        }
+    }
 }
 
 // hero header section for contact
@@ -154,8 +178,6 @@
         @include flexComp(row);
         justify-content: space-between;
         background: $headerGlasmorphismClr;
-        backdrop-filter: blur(40px);
-        -webkit-backdrop-filter: blur(40px);
         padding: 1rem 2rem;
         position: fixed;
         width: 100%;
@@ -224,23 +246,35 @@
                     }
                 }
             }
+            > .font-size-controls{
+                @include hiddenElementOnMoreThan768px();
+            }
         }
 
         > .btn-reserve {
-            @include fontSize13px();
-            border: 1px solid $white-clr;
-            background: transparent;
+            @include fontSize14px();
+            @include flexComp(row);
+            gap: 0.25rem;
             color: $white-clr;
-            padding: 1rem 2rem;
-            border-radius: 0.5rem;
-            font-family: $poppins-font;
+            font-family: $inter-font;
 
             &:hover,
             :focus {
-                background: $pink-clr;
-                color: $white-clr;
-                border: 1px solid $pink-clr;
+                scale: 1.1;
                 @include Transbtnhovers();
+            }
+        }
+
+        > .font-size-controls{
+            @include flex(row);
+            gap: 0.5rem;
+            @include fontSize13px();
+            color: $pureWhite;
+
+            @media screen and (min-width: 768px) {
+                @include flex(row);
+                gap: 1.5rem;
+                @include fontSize20px();
             }
         }
     }
@@ -411,7 +445,9 @@
             justify-content: space-between;
             align-items: flex-start;
 
-            > .logoSection, .navLinks, .mailSection{
+            > .logoSection,
+            .navLinks,
+            .mailSection {
                 max-width: 30%;
             }
         }
@@ -532,6 +568,213 @@
     }
 }
 
+// contact main form
+@mixin ContactMainForm() {
+    padding: 7rem 2rem;
+    @include flex(column);
+    gap: 2rem;
+
+    @media screen and (min-width: 768px) {
+        padding: 12rem 5rem;
+    }
+
+    > h2 {
+        @include fontSize35px();
+        color: $deep-indigo;
+        font-family: $poppins-font;
+        text-align: left;
+        line-height: 2.5rem;
+
+        @media screen and (min-width: 768px) {
+            @include fontSize60px();
+            line-height: 4rem;
+            padding-right: 10%;
+        }
+    }
+
+    > .contact-session {
+        > form {
+            @include flex(column);
+            gap: 2rem;
+            margin-top: 3rem;
+
+            > .flexGroup {
+                @include flex(row);
+                gap: 2.5rem;
+                flex-wrap: wrap;
+
+                > .textContainer {
+                    @include flex(column);
+                    gap: 0.5rem;
+                    width: 20rem;
+
+                    > label {
+                        @include fontSize15px();
+                        font-family: $inter-font;
+                        color: $grey-clr;
+                        font-weight: 300;
+                    }
+
+                    > input {
+                        width: 100%;
+                        outline: none;
+                        border-bottom: 1px solid $grey-clr;
+                        padding: 0.5rem 0.5rem 0.5rem 1rem;
+                        @include fontSize15px();
+                        font-family: $inter-font;
+                        color: $black-clr;
+                        font-weight: 400;
+                    }
+                    > input[type="number"]::-webkit-inner-spin-button,
+                    input[type="number"]::-webkit-outer-spin-button {
+                        -webkit-appearance: none;
+                        margin: 0;
+                    }
+
+                    > input[type="number"] {
+                        -moz-appearance: textfield; /* For Firefox */
+                    }
+                }
+            }
+
+            > .message {
+                @include flex(column);
+                gap: 0.5rem;
+
+                > label {
+                    @include fontSize15px();
+                    font-family: $inter-font;
+                    color: $grey-clr;
+                    font-weight: 300;
+                }
+
+                > textarea {
+                    width: 90%;
+                    outline: none;
+                    border-bottom: 1px solid $grey-clr;
+                    padding: 1rem 0.5rem 1rem 1rem;
+                    @include fontSize15px();
+                    font-family: $inter-font;
+                    color: $black-clr;
+                    font-weight: 400;
+                }
+            }
+
+            > button {
+                margin-top: 2.5rem;
+                @include flex(row);
+                gap: 0.5rem;
+                align-items: center;
+                border: none;
+                width: 15rem;
+                padding: 1.5rem 1.5rem;
+                background-color: $pink-clr;
+                color: $white-clr;
+                font-family: $inter-font;
+                @include fontSize15px();
+                font-weight: 600;
+                border-radius: 5rem;
+                cursor: pointer;
+                @include Transbtnhovers();
+
+                &:hover {
+                    background-color: $deep-indigo;
+                    @include Transbtnhovers();
+                }
+            }
+        }
+    }
+}
+
+// contact details
+@mixin ContactDetails() {
+    // @include SectionPadding();
+    @include flex(column);
+    gap: 2rem;
+    background: hsla(260, 60%, 24%, 0.1);
+    padding: 5rem 2rem;
+    backdrop-filter: blur(45px);
+    -webkit-backdrop-filter: blur(45px);
+
+    @media screen and (min-width: 768px) {
+        padding: 8rem 3rem;
+        @include flexComp(row);
+        justify-content: space-between;
+        align-items: flex-start;
+
+        > .container,
+        .emailAddressSection,
+        .phoneSection {
+            max-width: 30%;
+        }
+    }
+
+    > .container {
+        @include flex(column);
+        gap: 0.5rem;
+
+        > article {
+            @include fontSize15px();
+            color: $black-clr;
+            font-family: $inter-font;
+            font-weight: 400;
+        }
+
+        > h3 {
+            @include fontSize28px();
+            color: $deep-indigo;
+            font-family: $poppins-font;
+            font-weight: 600;
+            line-height: 2.5rem;
+
+            @media screen and (min-width: 768px) {
+                @include fontSize40px();
+                line-height: 3rem;
+            }
+        }
+    }
+
+    > .emailAddressSection {
+        @include flex(column);
+        gap: 0.5rem;
+
+        > p.email,
+        p.mainEmail {
+            @include fontSize18px();
+            font-weight: 600;
+            color: $black-clr;
+            font-family: $poppins-font;
+        }
+        > p.hours {
+            @include fontSize15px();
+            font-weight: 400;
+            color: $black-clr;
+            font-family: $inter-font;
+        }
+    }
+
+    > .phoneSection {
+        @include flex(column);
+        gap: 0.5rem;
+
+        > p.phone,
+        p.num {
+            @include fontSize18px();
+            font-weight: 600;
+            color: $black-clr;
+            font-family: $poppins-font;
+        }
+        > p.hours {
+            @include fontSize15px();
+            font-weight: 400;
+            color: $black-clr;
+            font-family: $inter-font;
+        }
+    }
+}
+
+
+
 
 
 
@@ -566,6 +809,14 @@
 
 .blog {
     @include BlogSection();
+}
+
+.contact-main-form {
+    @include ContactMainForm();
+}
+
+.contact-details {
+    @include ContactDetails();
 }
 
 footer {

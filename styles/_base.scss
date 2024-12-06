@@ -13,6 +13,19 @@ $grey-clr: #6a6a6a;
 $pink-clr: #f5167e;
 $deep-grey: #f1f1f1;
 $headerGlasmorphismClr:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5));
+$reallyDarkBlue: #2B3442;
+$whiteSmokish: #F6F8FF;
+$pureWhite: #FEFEFE;
+
+
+// Dark mode colors
+$pureWhiteDark: #FFFFFF;
+$darkish: #141D2F;
+$darkbluish: #1E2A47;
+
+
+
+
 
 //components mixins here
 @mixin flex($direc) {
@@ -68,7 +81,7 @@ $headerGlasmorphismClr:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5));
 }
 
 @mixin fontSize35px() {
-    font-family: clamp(2.1875rem, 2.19vw, 2.19rem);
+    font-size: clamp(2.1875rem, 2.19vw, 2.19rem);
 }
 
 @mixin fontSize40px() {
@@ -140,7 +153,7 @@ $headerGlasmorphismClr:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5));
     position: fixed;
     width: 72%;
     height: 100%;
-    background: hsla(260, 60%, 24%, 0.04);
+    background: hsla(260, 60%, 24%, 0.4);
     backdrop-filter: blur(45px);
     -webkit-backdrop-filter: blur(45px);
     top: 0;
@@ -157,7 +170,6 @@ $headerGlasmorphismClr:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5));
         text-align: left;
         row-gap: 1.5rem;
         bottom: 5%;
-        
 
         & li > a{
             font-family: $poppins-font;
@@ -174,8 +186,11 @@ $headerGlasmorphismClr:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5));
         right: 10%;
         color: rgba(43, 24, 77, 0.9);
         cursor: pointer;
-
     }
+
+    
+
+    
 }
 
 

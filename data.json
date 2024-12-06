@@ -4,6 +4,7 @@
             "id": "1",
             "name": "NTU Design and Digital Arts Building Tour",
             "description": "Designed by award-winning architects Hawkins Brown, and delivered by local architects CPMG, the new Design & Digital Arts Building will place Nottingham as a UK hub for film, television, animation, UX design, games design, graphic design and more. Please join CPMG architect Alex Walker for a look inside this incredible project, which has transformed the Nottingham skyline, and significantly enhanced the academic provision for design and digital arts students. He will deliver a presentation on the design process including the background, concept, specialist facilities and locational considerations, followed by a guided tour around the building, not generally open to the wider public.",
+            "type": "Tour",
             "date": {
                 "day": 18,
                 "month": "December",
@@ -35,6 +36,7 @@
             "id": "2",
             "name": "Nottingham DS&AI Meetup",
             "description": "Neil is a retired engineer involved with safety in the rail industry. Neil has several formal safety qualifications covering occupational safety and system safety. Neil has had a varied career with over forty years of rail experience, including over thirty years of safety experience. Neil has worked in research, manufacturing, Infrastructure Manager, and consultancy organisations. Neil has created safety analyses, judged and approved the analyses created by others and provided help and advice to the industry. Neil has held a number of senior positions including Head of Acceptance, Chair of System Review Panels, and Engineering Assurance Director.",
+            "type": "Meetup",
             "date": {
                 "day": 14,
                 "month": "November",
@@ -42,7 +44,7 @@
             },
             "time": "6:30 PM to 8:30 PM GMT",
             "venue": {
-            "name": "Nottingham",
+            "name": "Nottingham, UK",
             "address": "Fothergill House, 16 King Street"
             },
             "organizer": {
