@@ -618,6 +618,7 @@
   outline: none;
   border-bottom: 1px solid #6a6a6a;
   padding: 0.5rem 0.5rem 0.5rem 1rem;
+  background-color: transparent;
   font-size: clamp(0.9375rem, 0.94vw, 0.94rem);
   font-family: "Inter", sans-serif;
   color: #000000;
@@ -759,6 +760,64 @@
   font-weight: 400;
   color: #000000;
   font-family: "Inter", sans-serif;
+}
+
+.searchContainer {
+  padding: 2.5rem 2rem;
+  margin-bottom: 3rem;
+}
+.searchContainer > .formGroup {
+  width: 90%;
+  margin: 0 auto;
+  background: #242565;
+  padding: 1.5rem;
+  border-radius: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .searchContainer > .formGroup {
+    width: 70%;
+  }
+}
+.searchContainer > .formGroup > form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .searchContainer > .formGroup > form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .searchContainer > .formGroup > form > .eventSearchContainer {
+    max-width: 45%;
+  }
+}
+.searchContainer > .formGroup > form > .eventSearchContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 2.5rem;
+  width: 100%;
+}
+.searchContainer > .formGroup > form > .eventSearchContainer > label {
+  font-size: clamp(0.9375rem, 0.94vw, 0.94rem);
+  font-family: "Inter", sans-serif;
+  color: #ffffff;
+  font-weight: 300;
+  width: 100%;
+}
+.searchContainer > .formGroup > form > .eventSearchContainer > label > input {
+  width: 100%;
+  outline: none;
+  border-bottom: 1px solid #6a6a6a;
+  padding: 0.5rem 0.5rem 0.5rem 1rem;
+  font-size: clamp(1.125rem, 1.13vw, 1.13rem);
+  font-family: "Inter", sans-serif;
+  color: #000000;
+  font-weight: 400;
+  background-color: transparent;
+  color: #ffffff;
 }
 
 footer {

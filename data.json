@@ -44,17 +44,17 @@
             },
             "time": "6:30 PM to 8:30 PM GMT",
             "venue": {
-            "name": "Nottingham, UK",
-            "address": "Fothergill House, 16 King Street"
+                "name": "Nottingham, UK",
+                "address": "Fothergill House, 16 King Street"
             },
             "organizer": {
-            "name": "Ben W. and 3 others",
-            "contact_info": null,
-            "follow_link": null
+                "name": "Ben W. and 3 others",
+                "contact_info": null,
+                "follow_link": null
             },
             "ticket": {
-            "price": "FREE",
-            "currency": "USD"
+                "price": "FREE",
+                "currency": "USD"
             },
             "images": [
             {
@@ -63,6 +63,729 @@
             }
             ],
             "event_link": "https://www.meetup.com/nottingham-artificial-intelligence-meetup/events/300975418/"
+        },
+        {
+            "id": "3",
+            "name": "Becoming a Management Consultant in 2025: Your Blueprint for Success",
+            "description": "This event offers insights into the evolving field of management consulting, providing strategies and knowledge essential for success in 2025 and beyond.",
+            "type": "Seminar",
+            "date": {
+                "day": 15,
+                "month": "December",
+                "year": 2024
+            },
+            "time": "10:00 AM - 12:00 PM GMT",
+            "venue": {
+                "name": "London Business School",
+                "address": "Regent's Park, London NW1 4SA, United Kingdom"
+            },
+            "organizer": {
+                "name": "Ríoh Burke-Derby",
+                "contact_info": null,
+                "follow_link": null
+            },
+            "ticket": {
+                "price": "50.00",
+                "currency": "GBP"
+            },
+            "images": [
+                {
+                    "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F911286633%2F2530746292491%2F1%2Foriginal.png?w=600&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C0%2C940%2C470&s=3688d71045271766374144b2f0641a95",
+                    "alt": "Becoming a Management Consultant in 2025"
+                }
+            ],
+            "event_link": "https://www.eventbrite.co.uk/e/becoming-a-management-consultant-in-2025-your-blueprint-for-success-tickets-1105258862009"
+        },
+        {
+            "id": "4",
+            "name": "ASE Annual Conference 2025 at the University of Nottingham",
+            "description": "The UK's largest event focusing on science education professional teaching and learning, offering over 250 sessions from leading science education speakers and practitioners.",
+            "type": "Conference",
+            "date": {
+                "day": 9,
+                "month": "January",
+                "year": 2025
+            },
+            "time": "08:00 AM GMT",
+            "venue": {
+                "name": "University of Nottingham",
+                "address": "University Park Campus, Nottingham, NG7 2RD, United Kingdom"
+            },
+            "organizer": {
+                "name": "Association for Science Education (ASE)",
+                "contact_info": null,
+                "follow_link": null
+            },
+            "ticket": {
+                "price": "£18 – £660",
+                "currency": "GBP"
+            },
+            "images": [
+                {
+                    "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F832577069%2F110963701485%2F1%2Foriginal.20240822-200544?w=600&auto=format%2Ccompress&q=75&sharp=10&rect=1%2C65%2C534%2C267&s=5483b3d2fdce2268e24d3e1682b625b6",
+                    "alt": "ASE Annual Conference 2025"
+                }
+            ],
+            "event_link": "https://www.eventbrite.co.uk/e/ase-annual-conference-2025-at-the-university-of-nottingham-tickets-909314182197"
+        },
+        {
+            "id": "5",
+            "name": "Preparation for Teaching Event for Level 5 Students",
+            "description": "Join our in-person session to gain advice from professionals and learn more about our PGCE and PGDE courses. Attendance guarantees an interview for one of our PGCE courses, subject to eligibility.",
+            "type": "Seminar",
+            "date": {
+                "day": 25,
+                "month": "February",
+                "year": 2025
+            },
+            "time": "2:00 PM - 3:30 PM GMT",
+            "venue": {
+                "name": "Bishop Grosseteste University",
+                "address": "Lincoln LN1 3DY, United Kingdom"
+            },
+            "organizer": {
+                "name": "Bishop Grosseteste University",
+                "contact_info": null,
+                "follow_link": null
+            },
+            "ticket": {
+                "price": "FREE",
+                "currency": "GBP"
+            },
+            "images": [
+                {
+                    "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F510697399%2F680240301033%2F1%2Foriginal.20230509-101714?w=600&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C753%2C4546%2C2273&s=c363aa231561998dc04ea287397d8503",
+                    "alt": "Preparation for Teaching Event for Level 5 Students"
+                }
+            ],
+            "event_link": "https://www.eventbrite.co.uk/e/preparation-for-teaching-event-for-level-5-students-tickets-1043466455257"
+        },
+        {
+            "id": "6",
+            "name": "Open Evening Showcase",
+            "description": "This event is your chance to navigate the exciting choices ahead! Whether you’re considering a specific career path or exploring different options, our Open Evening Showcase will help you with your decisions.",
+            "type": "Open Day",
+            "date": {
+                "day": 4,
+                "month": "February",
+                "year": 2025
+            },
+            "time": "4:00 PM - 7:00 PM GMT",
+            "venue": {
+                "name": "Chesterfield College",
+                "address": "Infirmary Road, Chesterfield, S41 7NG, United Kingdom"
+            },
+            "organizer": {
+                "name": "Chesterfield College",
+                "contact_info": null,
+                "follow_link": null
+            },
+            "ticket": {
+                "price": "FREE",
+                "currency": "GBP"
+            },
+            "images": [
+                {
+                    "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F905865873%2F158334967289%2F1%2Foriginal.20241125-115740?w=600&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C1000%2C6000%2C3000&s=8d3c558029b4684120555dbd6d9ec1e2",
+                    "alt": "Open Evening Showcase"
+                }
+            ],
+            "event_link": "https://www.eventbrite.co.uk/e/open-evening-showcase-tickets-917189086247"
+        },
+        {
+            "id": "7",
+            "name": "January 2025 Open Event",
+            "description": "Grantham College open events are the perfect way to get to know the college and find out what we have on offer. Come and talk to our expert tutors, meet our friendly staff & students. Our open events are a great opportunity to see what it is like to study at Grantham College & University Centre!",
+            "type": "Open Event",
+            "date": {
+                "day": 23,
+                "month": "January",
+                "year": 2025
+            },
+            "time": "5:30 PM - 7:30 PM GMT",
+            "venue": {
+                "name": "Grantham College",
+                "address": "Stonebridge Road, Grantham, NG31 9AP, United Kingdom"
+            },
+            "organizer": {
+                "name": "Grantham College",
+                "contact_info": null,
+                "follow_link": null
+            },
+            "ticket": {
+                "price": "FREE",
+                "currency": "GBP"
+            },
+            "images": [
+                {
+                    "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F831448749%2F217600678434%2F1%2Foriginal.20240821-140211?w=600&auto=format%2Ccompress&q=75&sharp=10&rect=584%2C0%2C4166%2C2083&s=6d61e2e0d9766baff42ea67831ffa7a1",
+                    "alt": "January 2025 Open Event"
+                }
+            ],
+            "event_link": "https://www.eventbrite.co.uk/e/january-2025-open-event-tickets-1000052813887"
+        },
+        {
+            "id": "8",
+            "name": "Engineering, Fabrication and Welding, and Motor Vehicle Open Event",
+            "description": "A specialist event showcasing the opportunities available in engineering, fabrication and welding, and motor vehicle sectors. Explore courses, apprenticeships, and career pathways with insights from expert teachers and support teams.",
+            "type": "Open Event",
+            "date": {
+                "day": 6,
+                "month": "February",
+                "year": 2025
+            },
+            "time": "5:30 PM - 7:30 PM GMT",
+            "venue": {
+                "name": "Vision West Nottinghamshire College Engineering Innovation Centre",
+                "address": "28 Oddicroft Lane, Sutton-in-Ashfield, NG17 5FA, United Kingdom"
+            },
+            "organizer": {
+                "name": "Vision West Nottinghamshire College",
+                "contact_info": null,
+                "follow_link": null
+            },
+            "ticket": {
+                "price": "FREE",
+                "currency": "GBP"
+            },
+            "images": [
+                {
+                    "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F836011669%2F228363567945%2F1%2Foriginal.20240828-132827?w=600&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C0%2C2160%2C1080&s=7837e6e8940e113c1656e71542191e5b",
+                    "alt": "Engineering, Fabrication and Welding, and Motor Vehicle Open Event"
+                }
+            ],
+            "event_link": "https://www.eventbrite.co.uk/e/engineering-fabrication-and-welding-and-motor-vehicle-open-event-registration-980260955907"
+        },
+        {
+            "id": "9",
+            "name": "United Kingdom Student Film Festival | 2025",
+            "description": "The UK Student Film Festival showcases innovative new films from film students worldwide across various genres, including drama, comedy, documentary, experimental, horror, and animation.",
+            "type": "Film Festival",
+            "date": {
+                "day": 6,
+                "month": "February",
+                "year": 2025
+            },
+            "time": "7:00 PM - 8:30 PM GMT",
+            "venue": {
+                "name": "The Hen & Chickens Theatre Bar",
+                "address": "109 Saint Paul's Road, London, N1 2NA, United Kingdom"
+            },
+            "organizer": {
+                "name": "wwcsff.com",
+                "contact_info": null,
+                "follow_link": null
+            },
+            "ticket": {
+                "price": "£6.13 - £8.83",
+                "currency": "GBP"
+            },
+            "images": [
+                {
+                    "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F877921749%2F168024202463%2F1%2Foriginal.20241018-101503?w=600&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C0%2C1600%2C800&s=427f48a04f30f0f20168d0b8b2931e6e",
+                    "alt": "United Kingdom Student Film Festival | 2025"
+                }
+            ],
+            "event_link": "https://www.eventbrite.co.uk/e/united-kingdom-student-film-festival-2025-tickets-998176862867"
+        },
+        {
+            "id": "10",
+            "name": "PGH Student Seminar - Addictions Team",
+            "description": "Learn how to help patients manage their addictions and discover the services available to support them. Topics include alcohol dependency, drug abuse, assessment of dependency, resources in UHD and the community, treatment of withdrawal, and smoking cessation.",
+            "type": "Seminar",
+            "date": {
+                "day": 20,
+                "month": "January",
+                "year": 2025
+            },
+            "time": "10:00 AM - 12:00 PM GMT",
+            "venue": {
+                "name": "Poole Hospital - Education Centre",
+                "address": "Longfleet Road, Poole, BH15 2JB, United Kingdom"
+            },
+            "organizer": {
+                "name": "BEAT Events - Royal Bournemouth Education & Training Team",
+                "contact_info": null,
+                "follow_link": null
+            },
+            "ticket": {
+                "price": "FREE",
+                "currency": "GBP"
+            },
+            "images": [
+                {
+                    "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F889489093%2F384929501075%2F1%2Foriginal.20241101-102538?w=600&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C0%2C940%2C470&s=c588413e897cbfa0044a97a7f1ffe12b",
+                    "alt": "PGH Student Seminar - Addictions Team"
+                }
+            ],
+            "event_link": "https://www.eventbrite.co.uk/e/pgh-student-seminar-addictions-team-tickets-1070430820399"
+        },
+        {
+            "id": "11",
+            "name": "Introducing 1:1 Devices to Increase Student Opportunities",
+            "description": "This event focuses on integrating 1:1 devices in educational settings to enhance student learning opportunities.",
+            "type": "Educational Seminar",
+            "date": {
+                "day": 15,
+                "month": "January",
+                "year": 2025
+            },
+            "time": "10:00 AM - 12:00 PM GMT",
+            "venue": {
+                "name": "Online Event",
+                "address": null
+            },
+            "organizer": {
+                "name": "Educational Technology Association",
+                "contact_info": null,
+                "follow_link": null
+            },
+            "ticket": {
+                "price": "FREE",
+                "currency": "GBP"
+            },
+            "images": [
+                {
+                    "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F911484113%2F2394925824153%2F1%2Foriginal.20241204-151342?w=600&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C0%2C6750%2C3375&s=e90d18fd4428a605ad964d41cefd962b",
+                    "alt": "Introducing 1:1 Devices to Increase Student Opportunities"
+                }
+            ],
+            "event_link": "https://www.eventbrite.co.uk/e/introducing-11-devices-to-increase-student-opportunities-tickets-1105473423769"
+        },
+        {
+            "id": "12",
+            "name": "Managing and Monitoring Research Degree Students",
+            "description": "This workshop covers the main issues involved in recruiting, registering, managing, and monitoring research degree students at the University of Portsmouth. It outlines the University's procedures for monitoring students' progress and discusses potential issues in PGR supervision, offering strategies for overcoming difficulties.",
+            "type": "Workshop",
+            "date": {
+                "day": 23,
+                "month": "January",
+                "year": 2025
+            },
+            "time": "10:00 AM - 12:00 PM GMT",
+            "venue": {
+                "name": "Training Room 4.09, Graduate School, St Andrew's Court",
+                "address": "St Michael's Road, Portsmouth, PO1 2PR, United Kingdom"
+            },
+            "organizer": {
+                "name": "University of Portsmouth - Research Supervision",
+                "contact_info": null,
+                "follow_link": null
+            },
+            "ticket": {
+                "price": "FREE",
+                "currency": "GBP"
+            },
+            "images": [
+                {
+                    "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F828496159%2F18523580719%2F1%2Foriginal.20240816-161805?w=600&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C83%2C2666%2C1333&s=88ea87a14f03e272924fe7b58185c46d",
+                    "alt": "Managing and Monitoring Research Degree Students"
+                }
+            ],
+            "event_link": "https://www.eventbrite.co.uk/e/managing-and-monitoring-research-degree-students-tickets-966238032967"
+        },
+        {
+            "id": "13",
+            "name": "Higher Education Student Finance Parent Information Evening",
+            "description": "Join us at the Parent Information Evening, where we'll equip your Weston College learner with a head start on their University application!",
+            "type": "Information Session",
+            "date": {
+                "day": 26,
+                "month": "February",
+                "year": 2025
+            },
+            "time": "6:00 PM - 7:00 PM GMT",
+            "venue": {
+                "name": "The Winter Gardens - UCW Entrance",
+                "address": "Royal Parade, Weston-super-Mare, BS23 1AJ, United Kingdom"
+            },
+            "organizer": {
+                "name": "University Centre Weston",
+                "contact_info": "careersadvice@weston.ac.uk",
+                "follow_link": null
+            },
+            "ticket": {
+                "price": "FREE",
+                "currency": "GBP"
+            },
+            "images": [
+                {
+                    "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F847418559%2F799313217433%2F1%2Foriginal.20240911-105504?h=740&w=1200&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C0%2C2048%2C1024&s=a5ee21b6f38fbcf3d783b12d1ddd3618",
+                    "alt": "Higher Education Student Finance Parent Information Evening"
+                }
+            ],
+            "event_link": "https://www.eventbrite.co.uk/e/higher-education-student-finance-parent-information-evening-tickets-1015985228167"
+        },
+        {
+            "id": "14",
+            "name": "Event: People Management Conference",
+            "description": "The People Management Conference is designed to enhance the academic development and employability of Human Resource Management students. The conference is also open to other dissertation students and supervisors interested in HR-related research areas. Participants will hear from academics and industry professionals and have the opportunity to present their dissertation research to gain valuable feedback and insights.",
+            "type": "Conference",
+            "date": {
+                "day": 24,
+                "month": "January",
+                "year": 2025
+            },
+            "time": "4:00 PM - 7:00 PM GMT",
+            "venue": {
+                "name": "University of Greenwich, Queen Anne Building 080",
+                "address": "Old Royal Naval College, 30 Park Row, London, SE10 9LS, United Kingdom"
+            },
+            "organizer": {
+                "name": "University of Greenwich",
+                "contact_info": null,
+                "follow_link": null
+            },
+            "ticket": {
+                "price": "FREE",
+                "currency": "GBP"
+            },
+            "images": [
+                {
+                    "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F907518873%2F133220511150%2F1%2Foriginal.20241127-134439?w=600&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C175%2C4550%2C2275&s=8a1d1f73d9ef4100a968fd04a9f6fdf2",
+                    "alt": "Event: People Management Conference"
+                }
+            ],
+            "event_link": "https://www.eventbrite.co.uk/e/event-people-management-conference-tickets-1097249656259"
+        },
+        {
+            "id": "15",
+            "name": "Student Climate Cafe",
+            "description": "A welcoming space for university students to get together and talk about climate change. Over drinks and snacks, we’ll have an informal and confidential conversation, supported by experienced facilitators. You can choose to share as much or as little as you feel comfortable with, and there is no expectation or requirement to attend regularly. University students will have the opportunity to encounter a curated selection of Manchester Museum's objects close-up during the session.",
+            "type": "Discussion",
+            "date": {
+                "day": 27,
+                "month": "November",
+                "year": 2024
+            },
+            "time": "1:30 PM - 3:00 PM GMT",
+            "venue": {
+                "name": "Manchester Museum",
+                "address": "Oxford Road, Manchester, M13 9PL, United Kingdom"
+            },
+            "organizer": {
+                "name": "Manchester Museum",
+                "contact_info": null,
+                "follow_link": null
+            },
+            "ticket": {
+                "price": "FREE",
+                "currency": "GBP"
+            },
+            "images": [
+                {
+                    "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F892981153%2F89837242271%2F1%2Foriginal.20241106-124556?w=600&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C149%2C1416%2C708&s=67714866bad47b7ab0142ab10ffb9928",
+                    "alt": "Student Climate Cafe"
+                }
+            ],
+            "event_link": "https://www.eventbrite.co.uk/e/student-climate-cafe-tickets-1075581817169"
+        },
+        {
+            "id": "16",
+            "name": "Meet the Art Collection: Light",
+            "description": "Join us for an up-close viewing of the Art Collection inspired by this year's Student Art Prize theme of light. Explore the beauty and brilliance of light through various art pieces and be inspired by the theme of LIGHT!",
+            "type": "Art Exhibition",
+            "date": {
+                "day": 29,
+                "month": "January",
+                "year": 2025
+            },
+            "time": "2:30 PM - 4:00 PM GMT",
+            "venue": {
+                "name": "5 The College, Library (Heritage Collections)",
+                "address": "5 The College, Durham, DH1 3EQ, United Kingdom"
+            },
+            "organizer": {
+                "name": "Art Collection",
+                "contact_info": "artcollection@durham.ac.uk",
+                "follow_link": null
+            },
+            "ticket": {
+                "price": "FREE",
+                "currency": "GBP"
+            },
+            "images": [
+                {
+                    "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F841432339%2F198958219351%2F1%2Foriginal.20240904-144929?crop=focalpoint&fit=crop&w=600&auto=format%2Ccompress&q=75&sharp=10&fp-x=0.005&fp-y=0.005&s=2e4f9a40207ed89763d97bd5d1dc285f",
+                    "alt": "Meet the Art Collection: Light"
+                }
+            ],
+            "event_link": "https://www.eventbrite.co.uk/e/meet-the-art-collection-light-tickets-1008438957067"
+        },
+        {
+            "id": "17",
+            "name": "2024 Outdoor Learning Conference: Education Outside the Box",
+            "description": "This conference aims to encourage educators to utilize outdoor spaces and natural areas effectively, creating memorable learning experiences for children beyond the classroom constraints.",
+            "type": "Conference",
+            "date": {
+                "day": 24,
+                "month": "May",
+                "year": 2024
+            },
+            "time": "9:00 AM BST",
+            "venue": {
+                "name": "The University of Northampton",
+                "address": "Northampton, England"
+            },
+            "organizer": {
+                "name": "Teach Outdoors",
+                "contact_info": null,
+                "follow_link": null
+            },
+            "ticket": {
+                "price": null,
+                "currency": "GBP"
+            },
+            "images": [
+                {
+                    "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F894754283%2F41542234220%2F1%2Foriginal.20241108-131604?w=600&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C363%2C3508%2C1754&s=04fc0afb8d9589de80dd87cb01c67692",
+                    "alt": "2024 Outdoor Learning Conference: Education Outside the Box"
+                }
+            ],
+            "event_link": "https://www.eventbrite.co.uk/e/2024-outdoor-learning-conference-education-outside-the-box-tickets-827144360047"
+        },
+        {
+            "id": "18",
+            "name": "Activate Rugby Academy: Rugby Programme Boys Open Event",
+            "description": "The Activate Rugby Academy, based at the City of Oxford College, is designed for talented 16-18-year-old rugby players aiming to excel at the highest levels. This open event offers prospective students insight into the integrated academic and rugby development timetable, available courses, and the support provided to maximize both academic and rugby potential.",
+            "type": "Open Event",
+            "date": {
+                "day": 4,
+                "month": "November",
+                "year": 2023
+            },
+            "time": "9:30 AM - 2:00 PM GMT",
+            "venue": {
+                "name": "Harcourt Hill Campus",
+                "address": "Harcourt Hill, Oxford, OX2 9AT, United Kingdom"
+            },
+            "organizer": {
+                "name": "Activate Learning",
+                "contact_info": null,
+                "follow_link": null
+            },
+            "ticket": {
+                "price": "FREE",
+                "currency": "GBP"
+            },
+            "images": [
+                {
+                    "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F631855559%2F142055206124%2F1%2Foriginal.20231031-102435?w=600&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C141%2C3944%2C1972&s=b7b37aee8fc81b3c589d0a0a3b418129",
+                    "alt": "Activate Rugby Academy: Rugby Programme Boys Open Event"
+                }
+            ],
+            "event_link": "https://www.eventbrite.co.uk/e/activate-rugby-academy-rugby-programme-boys-open-event-tickets-1010371818307"
+        },
+        {
+            "id": "19",
+            "name": "IE University: London Sessions with Student Services",
+            "description": "Join us for an informative session with IE University's Student Services team in London. This event is designed to provide prospective and current students with insights into the support services available, including accommodation, visa assistance, and student life at IE University.",
+            "type": "Information Session",
+            "date": {
+                "day": 21,
+                "month": "March",
+                "year": 2025
+            },
+            "time": "7:00 PM GMT",
+            "venue": {
+                "name": "IE London Office",
+                "address": "Kensington Pavilion, London, United Kingdom"
+            },
+            "organizer": {
+                "name": "IE University - UK",
+                "contact_info": null,
+                "follow_link": null
+            },
+            "ticket": {
+                "price": "FREE",
+                "currency": "GBP"
+            },
+            "images": [
+                {
+                    "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F907438063%2F215986123110%2F1%2Foriginal.20241127-102518?w=600&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C0%2C2160%2C1080&s=a9b4f461f7bcd7427c90f3bfc3fc3475",
+                    "alt": "IE University: London Sessions with Student Services"
+                }
+            ],
+            "event_link": "https://www.eventbrite.co.uk/e/ie-university-london-sessions-with-student-services-tickets-1097107902269"
+        },
+        {
+            "id": "20",
+            "name": "Nursing Careers Event 2025 - PM Session",
+            "description": "A careers event for nursing students at the University of Wolverhampton.",
+            "type": "Career Fair",
+            "date": {
+                "day": 28,
+                "month": "January",
+                "year": 2025
+            },
+            "time": "1:00 PM - 3:30 PM GMT",
+            "venue": {
+                "name": "University Of Wolverhampton, Walsall Campus, Sports Hall",
+                "address": "Magdalene Road, Walsall, WS1 3TA, United Kingdom"
+            },
+            "organizer": {
+                "name": "University of Wolverhampton",
+                "contact_info": null,
+                "follow_link": null
+            },
+            "ticket": {
+                "price": "FREE",
+                "currency": "GBP"
+            },
+            "images": [
+                {
+                    "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F870603209%2F502036034477%2F1%2Foriginal.20241009-152354?w=600&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C6%2C630%2C315&s=fa85e88c258dfaf4c307a1d1fe6ad3d8",
+                    "alt": "Nursing Careers Event 2025 - PM Session"
+                }
+            ],
+            "event_link": "https://www.eventbrite.co.uk/e/nursing-careers-event-2025-pm-session-tickets-1042887012127"
+        },
+        {
+            "id": "22",
+            "name": "Pizza and Beers: Student Night",
+            "description": "Join us for an evening of networking and presentations by esteemed architects, including John Assael (Assael Architects), Femi Oresanya (HOK), and Mike Stiff (Stiff + Trevillion). Enjoy complimentary pizzas, beer, wine, and soft drinks while engaging with professionals from the Worshipful Company of Chartered Architects (WCCA).",
+            "type": "Networking Event",
+            "date": {
+                "day": 19,
+                "month": "November",
+                "year": 2024
+            },
+            "time": "6:00 PM - 8:30 PM GMT",
+            "venue": {
+                "name": "Temple Bar London",
+                "address": "2 Paternoster Square, London, EC4M 7DX, United Kingdom"
+            },
+            "organizer": {
+                "name": "Temple Bar London",
+                "contact_info": null,
+                "follow_link": null
+            },
+            "ticket": {
+                "price": "£6.13",
+                "currency": "GBP"
+            },
+            "images": [
+                {
+                    "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F859129639%2F450555903552%2F1%2Foriginal.20240925-151223?w=600&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C194%2C4032%2C2016&s=fbdd51dca996669b1bd913886d7678ff",
+                    "alt": "Pizza and Beers: Student Night"
+                }
+            ],
+            "event_link": "https://www.eventbrite.co.uk/e/pizza-and-beers-student-night-tickets-1028917890107"
+        },
+        {
+            "id": "23",
+            "name": "University of Plymouth Nursing Curriculum Stakeholder Event #1 - Plymouth",
+            "description": "Join us for an engaging gathering where stakeholders in the nursing field come together to discuss curriculum matters. This in-person event offers an opportunity to collaborate with industry professionals and contribute to shaping the future of nursing education.",
+            "type": "Stakeholder Meeting",
+            "date": {
+                "day": 21,
+                "month": "January",
+                "year": 2025
+            },
+            "time": "1:00 PM - 3:30 PM GMT",
+            "venue": {
+                "name": "Rooms 206-207, Roland Levinsky Building",
+                "address": "Plymouth, PL4 8AA, United Kingdom"
+            },
+            "organizer": {
+                "name": "Chloë Dyer",
+                "contact_info": "chloe.dyer@plymouth.ac.uk",
+                "follow_link": null
+            },
+            "ticket": {
+                "price": "FREE",
+                "currency": "GBP"
+            },
+            "images": [
+                {
+                    "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F901172973%2F534561526249%2F1%2Foriginal.20241118-130208?w=600&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C27%2C852%2C426&s=54bd52e1fb3d2089a9dfc39388b7a770",
+                    "alt": "University of Plymouth Nursing Curriculum Stakeholder Event #1 - Plymouth"
+                }
+            ],
+            "event_link": "https://www.eventbrite.co.uk/e/university-of-plymouth-nursing-curriculum-stakeholder-event-1-plymouth-tickets-1086917923769"
+        },
+        {
+            "id": "24",
+            "name": "Cambridge University's International Day of Persons with Disabilities Conference",
+            "description": "Join us for a day of insightful discussions and workshops focusing on disability inclusion and accessibility within academic environments. This conference aims to foster understanding and promote best practices for supporting individuals with disabilities.",
+            "type": "Conference",
+            "date": {
+                "day": 3,
+                "month": "December",
+                "year": 2024
+            },
+            "time": "9:00 AM - 5:00 PM GMT",
+            "venue": {
+                "name": "University of Cambridge",
+                "address": "Cambridge, United Kingdom"
+            },
+            "organizer": {
+                "name": "University of Cambridge",
+                "contact_info": null,
+                "follow_link": null
+            },
+            "ticket": {
+                "price": "FREE",
+                "currency": "GBP"
+            },
+            "images": [
+                {
+                    "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F910602353%2F2435535379001%2F1%2Foriginal.20241203-131921?crop=focalpoint&fit=crop&w=600&auto=format%2Ccompress&q=75&sharp=10&fp-x=0.879734848485&fp-y=0.600194552529&s=27a0cedabac7b03bbb31cd49b6aee69d",
+                    "alt": "Cambridge University's International Day of Persons with Disabilities Conference"
+                }
+            ],
+            "event_link": "https://www.eventbrite.co.uk/e/cambridge-unis-international-day-of-persons-with-disabilites-conference-tickets-1104457755879"
+        },
+        {
+            "id": "25",
+            "name": "The 1Xth Sophia Centre London Conference",
+            "description": "Join us for the 1Xth annual Sophia Centre London Conference, where scholars and enthusiasts gather to explore the intersections of cosmology, culture, and the arts. This year's theme focuses on the influence of celestial phenomena on human creativity and societal development.",
+            "type": "Conference",
+            "date": {
+                "day": 25,
+                "month": "January",
+                "year": 2025
+            },
+            "time": "9:30 AM GMT",
+            "venue": {
+                "name": "University of Wales Trinity Saint David - London Campus",
+                "address": "London, United Kingdom"
+            },
+            "organizer": {
+                "name": "Sophia Centre, University of Wales Trinity Saint David",
+                "contact_info": null,
+                "follow_link": null
+            },
+            "ticket": {
+                "price": "£30.00",
+                "currency": "GBP"
+            },
+            "images": [
+                {
+                    "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F865510319%2F2010841483073%2F1%2Foriginal.20241003-060447?w=600&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C0%2C536%2C268&s=a57a67bf212048a4250a88e94f3bc505",
+                    "alt": "The 1Xth Sophia Centre London Conference"
+                }
+            ],
+            "event_link": "https://www.eventbrite.co.uk/e/the-1xth-sophia-centre-london-conference-tickets-1037638283037"
         }
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
     ]
 }

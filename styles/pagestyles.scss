@@ -105,7 +105,7 @@
             }
         }
 
-        > .font-size-controls{
+        > .font-size-controls {
             @include flex(row);
             gap: 0.5rem;
             @include fontSize13px();
@@ -156,7 +156,7 @@
         }
     }
 
-    > .header-event{
+    > .header-event {
         text-align: center;
         @include fontSize45px();
         padding: 5rem 2rem 4rem 2rem;
@@ -246,7 +246,7 @@
                     }
                 }
             }
-            > .font-size-controls{
+            > .font-size-controls {
                 @include hiddenElementOnMoreThan768px();
             }
         }
@@ -265,7 +265,7 @@
             }
         }
 
-        > .font-size-controls{
+        > .font-size-controls {
             @include flex(row);
             gap: 0.5rem;
             @include fontSize13px();
@@ -620,6 +620,7 @@
                         outline: none;
                         border-bottom: 1px solid $grey-clr;
                         padding: 0.5rem 0.5rem 0.5rem 1rem;
+                        background-color: transparent;
                         @include fontSize15px();
                         font-family: $inter-font;
                         color: $black-clr;
@@ -773,6 +774,74 @@
     }
 }
 
+// search container
+@mixin SearchContainer() {
+    padding: 2.5rem 2rem;
+    margin-bottom: 3rem;
+
+    > .formGroup {
+        width: 90%;
+        margin: 0 auto;
+        background: $deep-indigo;
+        padding: 1.5rem;
+        border-radius: 1rem;
+
+        @media screen and (min-width: 768px) {
+            width: 70%;
+        }
+       
+        > form {
+            @include flex(column);
+            gap: 2rem;
+
+            @media screen and (min-width: 768px) {
+                @include flex(row);
+                justify-content: space-between;
+                align-items: center;
+
+                > .eventSearchContainer{
+                    max-width: 45%;
+                }
+            }
+
+            > .eventSearchContainer{
+                @include flex(row);
+                gap: 2.5rem;
+                width: 100%;
+
+
+                > label {
+                    @include fontSize15px();
+                    font-family: $inter-font;
+                    color: $white-clr;
+                    font-weight: 300;
+                    width: 100%;
+
+                    > input {
+                        width: 100%;
+                        outline: none;
+                        border-bottom: 1px solid $grey-clr;
+                        padding: 0.5rem 0.5rem 0.5rem 1rem;
+                        @include fontSize18px();
+                        font-family: $inter-font;
+                        color: $black-clr;
+                        font-weight: 400;
+                        background-color: transparent;
+                        color: $white-clr;
+
+                    }
+                }
+
+            }
+        }
+
+    }
+}
+
+
+
+
+
 
 
 
@@ -817,6 +886,10 @@
 
 .contact-details {
     @include ContactDetails();
+}
+
+.searchContainer {
+    @include SearchContainer();
 }
 
 footer {
