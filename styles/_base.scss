@@ -12,20 +12,15 @@ $deep-indigo: #242565;
 $grey-clr: #6a6a6a;
 $pink-clr: #f5167e;
 $deep-grey: #f1f1f1;
-$headerGlasmorphismClr:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5));
-$reallyDarkBlue: #2B3442;
-$whiteSmokish: #F6F8FF;
-$pureWhite: #FEFEFE;
-
+$headerGlasmorphismClr: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5));
+$reallyDarkBlue: #2b3442;
+$whiteSmokish: #f6f8ff;
+$pureWhite: #fefefe;
 
 // Dark mode colors
-$pureWhiteDark: #FFFFFF;
-$darkish: #141D2F;
-$darkbluish: #1E2A47;
-
-
-
-
+$pureWhiteDark: #ffffff;
+$darkish: #141d2f;
+$darkbluish: #1e2a47;
 
 //components mixins here
 @mixin flex($direc) {
@@ -147,7 +142,6 @@ $darkbluish: #1E2A47;
     }
 }
 
-
 // navbar container on mobile
 @mixin MenuContainer() {
     position: fixed;
@@ -161,25 +155,24 @@ $darkbluish: #1E2A47;
     overflow-y: auto;
     z-index: 9999999;
 
-    & #my-list-of-headers{
+    & #my-list-of-headers {
         position: relative;
         top: 20%;
         display: flex;
         flex-direction: column;
-        margin-left: clamp(2.5rem , 2.8vw , 3rem);
+        margin-left: clamp(2.5rem, 2.8vw, 3rem);
         text-align: left;
         row-gap: 1.5rem;
         bottom: 5%;
 
-        & li > a{
+        & li > a {
             font-family: $poppins-font;
             color: $deep-grey;
             @include fontSize20px();
         }
-
     }
 
-    #close-tbn{
+    #close-tbn {
         position: absolute;
         top: 3%;
         font-size: 2.5rem;
@@ -187,12 +180,27 @@ $darkbluish: #1E2A47;
         color: rgba(43, 24, 77, 0.9);
         cursor: pointer;
     }
-
-    
-
-    
 }
 
+// button container
+@mixin ButtonContainer() {
+    @include flexComp(row);
+    border: 1px solid $grey-clr;
+    padding: 0.5rem 1rem;
+    @include fontSize13px();
+    border-radius: 2.5rem;
+    gap: 0.5rem;
+    color: $grey-clr;
+
+    &:hover,
+    :focus,
+    :active {
+        @include Transbtnhovers();
+        background-color: $deep-indigo;
+        color: $white-clr;
+        border: 1px solid $deep-indigo;
+    }
+}
 
 // padding for sections
 @mixin SectionPadding() {

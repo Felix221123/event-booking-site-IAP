@@ -73,6 +73,17 @@ $(document).ready(function () {
             $themeButton.text("Dark ").append('<img src="../assets/svg/moon.svg" alt="moon icon" id="dark-icon">');
             localStorage.setItem("theme", "light");
         }
+
+        // Reapply theme styles to dynamically created buttons
+        $(".filter-btn.dark-mode-clr, .more-options.dark-mode-clr option").each(function () {
+            if (mode === "dark") {
+                $(this).css("color", "#FFFFFF");
+                localStorage.setItem("theme", "dark");
+            } else {
+                $(this).css("color", "");
+                localStorage.setItem("theme", "light");
+            }
+        });
     };
 
     // Load theme from localStorage on page load
@@ -112,7 +123,7 @@ $(document).ready(function () {
                 }
             });
         }
-    };
+    };    
 
     // Initialize default font sizes for each element
     $(targetClass).each(function () {
@@ -235,25 +246,25 @@ $(document).ready(function () {
         const $filterContainer = $(".filterContainer");
 
         // Add "All" button
-        $filterContainer.append('<button class="filter-btn" data-category="all">All</button>');
+        $filterContainer.append('<button class="filter-btn cursor-pointer dark-mode-clr" data-category="all">All</button>');
 
         // Add first 3 categories
-        categories.slice(0, 3).forEach(category => {
-            $filterContainer.append(`<button class="filter-btn" data-category="${category}">${category}</button>`);
+        categories.slice(0, 5).forEach(category => {
+            $filterContainer.append(`<button class="filter-btn cursor-pointer dark-mode-clr" data-category="${category}">${category}</button>`);
         });
 
         // Add "More" dropdown button
-        if (categories.length > 3) {
+        if (categories.length > 5) {
             const dropdown = `
                 <div class="more-categories">
-                    <select class="more-options" >
-                        <option value="more" disabled selected>More...</option>
-                        ${categories.slice(3).map(cat => `<option value="${cat}">${cat}</option>`).join("")}
+                    <select class="more-options cursor-pointer">
+                        <option value="more" disabled selected class="dark-mode-clr">More...</option>
+                        ${categories.slice(5).map(cat => `<option value="${cat}" class="dark-mode-clr options-value">${cat}</option>`).join("")}
                     </select>
                 </div>
             `;
             $filterContainer.append(dropdown);
-        }
+        };
     }
 
 
@@ -265,7 +276,9 @@ $(document).ready(function () {
     const eventsData = fetch("../data.json");
     eventsData.then((response) => response.json()).then((data) => {
         console.log("here is the data", data.events,);
+        // applySavedFontSizes();
         createFilterButtons(data.events);
+        applySavedFontSizes();
     });
 
 

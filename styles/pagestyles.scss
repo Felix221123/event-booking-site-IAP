@@ -777,7 +777,7 @@
 // search container
 @mixin SearchContainer() {
     padding: 2.5rem 2rem;
-    margin-bottom: 3rem;
+    margin-bottom: 2.5rem;
 
     > .formGroup {
         width: 90%;
@@ -834,8 +834,57 @@
     }
 }
 
+// filter sort container
+@mixin FilterSortContainer(){
+    margin-bottom: 3.5rem;
+    @include SectionPadding();
+
+    @media screen and (min-width: 768px) {
+        @include flex(row);
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    > .filterContainer {
+        @include flex(row);
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 1rem;
+
+        > button {
+            @include ButtonContainer();
+        }
+
+        > .more-categories{
+            @include flex(row);
+            border-bottom: 1px solid $grey-clr;
+            padding: .5rem;
+
+            > select {
+                border: none;
+                outline: none;
+                @include fontSize14px();
+                background: transparent;
+                color: $grey-clr;
+            }
+        }
+    }
+
+    > .sortContainer{
+        @include ButtonContainer();
+        @media screen and (max-width: 767px) {
+            margin-top: 1.5rem;
+        }
+    }
+}
 
 
+// active category
+@mixin ActiveCategory(){
+    border: 1px solid $deep-indigo;
+    background-color: $deep-indigo;
+    color: $white-clr;
+}
 
 
 
@@ -881,6 +930,14 @@
 
 .searchContainer {
     @include SearchContainer();
+}
+
+.filter-sort-container{
+    @include FilterSortContainer();
+}
+
+.activeCategory {
+    @include ActiveCategory();
 }
 
 footer {
