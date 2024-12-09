@@ -159,9 +159,9 @@ $(document).ready(function () {
         const fullName = $(this).val().trim();
         const nameRegex = /^[a-zA-Z\s]+$/;
         if (fullName === "" | !nameRegex.test(fullName)) {
-            $(this).css({"border-bottom": "2px solid red", "transition" : "border-bottom 0.3s ease"});
+            $(this).css({ "border-bottom": "2px solid red", "transition": "border-bottom 0.3s ease" });
         } else {
-            $(this).css({"border-bottom": "2px solid green", "transition" : "border-bottom 0.3s ease"});
+            $(this).css({ "border-bottom": "2px solid green", "transition": "border-bottom 0.3s ease" });
         }
     });
 
@@ -170,9 +170,9 @@ $(document).ready(function () {
         const email = $(this).val().trim();
         const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
         if (email === "" || !emailRegex.test(email)) {
-            $(this).css({"border-bottom": "2px solid red", "transition" : "border-bottom 0.3s ease"});
+            $(this).css({ "border-bottom": "2px solid red", "transition": "border-bottom 0.3s ease" });
         } else {
-            $(this).css({"border-bottom": "2px solid green", "transition" : "border-bottom 0.3s ease"});
+            $(this).css({ "border-bottom": "2px solid green", "transition": "border-bottom 0.3s ease" });
         }
     });
 
@@ -180,9 +180,9 @@ $(document).ready(function () {
     $("#phoneNumber").on("input", function () {
         const phoneNumber = $(this).val().trim();
         if (phoneNumber && isNaN(phoneNumber)) {
-            $(this).css({"border-bottom": "2px solid red", "transition" : "border-bottom 0.3s ease"});
+            $(this).css({ "border-bottom": "2px solid red", "transition": "border-bottom 0.3s ease" });
         } else {
-            $(this).css({"border-bottom": "2px solid green", "transition" : "border-bottom 0.3s ease"});
+            $(this).css({ "border-bottom": "2px solid green", "transition": "border-bottom 0.3s ease" });
         }
     });
 
@@ -190,9 +190,9 @@ $(document).ready(function () {
     $("#message").on("input", function () {
         const message = $(this).val().trim();
         if (message === "") {
-            $(this).css({"border-bottom": "2px solid red", "transition" : "border-bottom 0.3s ease"});
+            $(this).css({ "border-bottom": "2px solid red", "transition": "border-bottom 0.3s ease" });
         } else {
-            $(this).css({"border-bottom": "2px solid green", "transition" : "border-bottom 0.3s ease"});
+            $(this).css({ "border-bottom": "2px solid green", "transition": "border-bottom 0.3s ease" });
         }
     });
 
@@ -206,7 +206,7 @@ $(document).ready(function () {
         const fullName = $("#fullName").val().trim();
         if (fullName === "") {
             isValid = false;
-            $("#fullName").css({"border-bottom": "2px solid red", "transition" : "border-bottom 0.3s ease"});
+            $("#fullName").css({ "border-bottom": "2px solid red", "transition": "border-bottom 0.3s ease" });
         }
 
         // Validate Email Address
@@ -214,7 +214,7 @@ $(document).ready(function () {
         const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
         if (email === "" || !emailRegex.test(email)) {
             isValid = false;
-            $("#email").css({"border-bottom": "2px solid red", "transition" : "border-bottom 0.3s ease"});
+            $("#email").css({ "border-bottom": "2px solid red", "transition": "border-bottom 0.3s ease" });
         }
 
         // Optional fields already handled during input events
@@ -224,8 +224,49 @@ $(document).ready(function () {
             // Uncomment the line below to allow actual form submission
             // this.submit();
         } else {
-            alert("Please fix the errors before submitting.");
+            alert("Please fill out the required fields before submitting.");
         }
     });
+
+
+    // Function to create filter buttons
+    function createFilterButtons(events) {
+        const categories = [...new Set(events.map(event => event.type))]; // Unique categories
+        const $filterContainer = $(".filterContainer");
+
+        // Add "All" button
+        $filterContainer.append('<button class="filter-btn" data-category="all">All</button>');
+
+        // Add first 3 categories
+        categories.slice(0, 3).forEach(category => {
+            $filterContainer.append(`<button class="filter-btn" data-category="${category}">${category}</button>`);
+        });
+
+        // Add "More" dropdown button
+        if (categories.length > 3) {
+            const dropdown = `
+                <div class="more-categories">
+                    <select class="more-options" >
+                        <option value="more" disabled selected>More...</option>
+                        ${categories.slice(3).map(cat => `<option value="${cat}">${cat}</option>`).join("")}
+                    </select>
+                </div>
+            `;
+            $filterContainer.append(dropdown);
+        }
+    }
+
+
+
+
+
+
+    // Fetching data from data.json
+    const eventsData = fetch("../data.json");
+    eventsData.then((response) => response.json()).then((data) => {
+        console.log("here is the data", data.events,);
+        createFilterButtons(data.events);
+    });
+
 
 });

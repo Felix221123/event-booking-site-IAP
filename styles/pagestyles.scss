@@ -789,7 +789,7 @@
         @media screen and (min-width: 768px) {
             width: 70%;
         }
-       
+
         > form {
             @include flex(column);
             gap: 2rem;
@@ -799,16 +799,15 @@
                 justify-content: space-between;
                 align-items: center;
 
-                > .eventSearchContainer{
+                > .eventSearchContainer {
                     max-width: 45%;
                 }
             }
 
-            > .eventSearchContainer{
+            > .eventSearchContainer {
                 @include flex(row);
                 gap: 2.5rem;
                 width: 100%;
-
 
                 > label {
                     @include fontSize15px();
@@ -828,20 +827,12 @@
                         font-weight: 400;
                         background-color: transparent;
                         color: $white-clr;
-
                     }
                 }
-
             }
         }
-
     }
 }
-
-
-
-
-
 
 
 

@@ -641,7 +641,7 @@
             "event_link": "https://www.eventbrite.co.uk/e/nursing-careers-event-2025-pm-session-tickets-1042887012127"
         },
         {
-            "id": "22",
+            "id": "21",
             "name": "Pizza and Beers: Student Night",
             "description": "Join us for an evening of networking and presentations by esteemed architects, including John Assael (Assael Architects), Femi Oresanya (HOK), and Mike Stiff (Stiff + Trevillion). Enjoy complimentary pizzas, beer, wine, and soft drinks while engaging with professionals from the Worshipful Company of Chartered Architects (WCCA).",
             "type": "Networking Event",
@@ -673,7 +673,7 @@
             "event_link": "https://www.eventbrite.co.uk/e/pizza-and-beers-student-night-tickets-1028917890107"
         },
         {
-            "id": "23",
+            "id": "22",
             "name": "University of Plymouth Nursing Curriculum Stakeholder Event #1 - Plymouth",
             "description": "Join us for an engaging gathering where stakeholders in the nursing field come together to discuss curriculum matters. This in-person event offers an opportunity to collaborate with industry professionals and contribute to shaping the future of nursing education.",
             "type": "Stakeholder Meeting",
@@ -705,7 +705,7 @@
             "event_link": "https://www.eventbrite.co.uk/e/university-of-plymouth-nursing-curriculum-stakeholder-event-1-plymouth-tickets-1086917923769"
         },
         {
-            "id": "24",
+            "id": "23",
             "name": "Cambridge University's International Day of Persons with Disabilities Conference",
             "description": "Join us for a day of insightful discussions and workshops focusing on disability inclusion and accessibility within academic environments. This conference aims to foster understanding and promote best practices for supporting individuals with disabilities.",
             "type": "Conference",
@@ -737,7 +737,7 @@
             "event_link": "https://www.eventbrite.co.uk/e/cambridge-unis-international-day-of-persons-with-disabilites-conference-tickets-1104457755879"
         },
         {
-            "id": "25",
+            "id": "24",
             "name": "The 1Xth Sophia Centre London Conference",
             "description": "Join us for the 1Xth annual Sophia Centre London Conference, where scholars and enthusiasts gather to explore the intersections of cosmology, culture, and the arts. This year's theme focuses on the influence of celestial phenomena on human creativity and societal development.",
             "type": "Conference",
