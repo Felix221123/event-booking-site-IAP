@@ -1194,6 +1194,199 @@
   font-weight: 400;
 }
 
+.event-details-container > .event-details-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 3.5rem 0rem;
+}
+@media screen and (min-width: 768px) {
+  .event-details-container > .event-details-card {
+    padding: 0rem 3rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .event-details-container > .event-details-card {
+    padding: 0rem 2rem;
+  }
+}
+.event-details-container > .event-details-card > .event-image-container {
+  position: relative;
+  overflow: hidden;
+  width: 90%;
+  border-radius: 1rem;
+  margin-bottom: 1.5rem;
+}
+.event-details-container > .event-details-card > .event-image-container > img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  border-radius: 1rem;
+}
+.event-details-container > .event-details-card > .infoContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: flex-start;
+  margin-bottom: 5rem;
+}
+@media screen and (min-width: 768px) {
+  .event-details-container > .event-details-card > .infoContainer {
+    display: grid;
+    grid-template-columns: 0.75fr 0.25fr;
+    gap: 3rem;
+    justify-content: space-between;
+    padding: 0rem 3.5rem;
+  }
+}
+.event-details-container > .event-details-card > .infoContainer > .event-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+.event-details-container > .event-details-card > .infoContainer > .event-info > .headerContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.event-details-container > .event-details-card > .infoContainer > .event-info > .headerContainer > .event-title {
+  font-size: clamp(1.75rem, 1.78vw, 1.79rem);
+  font-family: "Poppins", sans-serif;
+  color: #242565;
+  font-weight: 600;
+  text-align: left;
+  line-height: 2.5rem;
+  margin-top: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .event-details-container > .event-details-card > .infoContainer > .event-info > .headerContainer > .event-title {
+    font-size: clamp(2.1875rem, 2.19vw, 2.19rem);
+  }
+}
+.event-details-container > .event-details-card > .infoContainer > .event-info > .headerContainer > .about-this-event {
+  font-size: clamp(1.25rem, 1.25vw, 1.26rem);
+  font-family: "Inter", sans-serif;
+  color: #000000;
+  font-weight: 600;
+  text-align: left;
+  line-height: 1.5rem;
+  margin-top: 1.5rem;
+}
+@media screen and (min-width: 768px) {
+  .event-details-container > .event-details-card > .infoContainer > .event-info > .headerContainer > .about-this-event {
+    padding: 0rem 5% 0rem 0rem;
+  }
+}
+.event-details-container > .event-details-card > .infoContainer > .event-info > .headerContainer > .event-description {
+  font-size: clamp(0.9375rem, 0.94vw, 0.94rem);
+  font-family: "Inter", sans-serif;
+  color: #6a6a6a;
+  font-weight: 400;
+  text-align: left;
+  line-height: 1.5rem;
+}
+.event-details-container > .event-details-card > .infoContainer > .event-info > .eventOrganizerContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  background-color: #242565;
+  padding: 1rem 2rem;
+  color: #fefefe;
+  border-radius: 0.5rem;
+  font-size: clamp(1.125rem, 1.13vw, 1.13rem);
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  align-items: flex-start;
+}
+.event-details-container > .event-details-card > .infoContainer > .event-info > .eventDateContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.event-details-container > .event-details-card > .infoContainer > .event-info > .eventDateContainer > .headerText {
+  font-size: clamp(1.25rem, 1.25vw, 1.26rem);
+  font-family: "Inter", sans-serif;
+  color: #000000;
+  font-weight: 600;
+  text-align: left;
+  line-height: 1.5rem;
+  margin-top: 1.5rem;
+}
+.event-details-container > .event-details-card > .infoContainer > .event-info > .eventDateContainer > .event-date, .event-details-container > .event-details-card > .infoContainer > .event-info > .eventDateContainer .event-time {
+  font-size: clamp(1.125rem, 1.13vw, 1.13rem);
+  font-family: "Inter", sans-serif;
+  color: #6a6a6a;
+  font-weight: 400;
+  text-align: left;
+  line-height: 1.5rem;
+}
+.event-details-container > .event-details-card > .infoContainer > .event-info > .event-venueContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.event-details-container > .event-details-card > .infoContainer > .event-info > .event-venueContainer > .headerText {
+  font-size: clamp(1.25rem, 1.25vw, 1.26rem);
+  font-family: "Inter", sans-serif;
+  color: #000000;
+  font-weight: 600;
+  text-align: left;
+  line-height: 1.5rem;
+  margin-top: 1.5rem;
+}
+.event-details-container > .event-details-card > .infoContainer > .event-info > .event-venueContainer > .event-venue {
+  font-size: clamp(1.125rem, 1.13vw, 1.13rem);
+  font-family: "Inter", sans-serif;
+  color: #6a6a6a;
+  font-weight: 500;
+  text-align: left;
+  line-height: 1.5rem;
+}
+.event-details-container > .event-details-card > .infoContainer > .event-tickets {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  border: 2px solid #242565;
+  border-radius: 0.5rem;
+  width: 20rem;
+  padding: 1rem;
+  align-items: flex-start;
+  background-color: #fefefe;
+}
+.event-details-container > .event-details-card > .infoContainer > .event-tickets > .headerText {
+  font-size: clamp(1.25rem, 1.25vw, 1.26rem);
+  font-family: "Inter", sans-serif;
+  color: #000000;
+  font-weight: 600;
+  text-align: left;
+  line-height: 1.5rem;
+}
+.event-details-container > .event-details-card > .infoContainer > .event-tickets > .ticket-price {
+  font-size: clamp(1.125rem, 1.13vw, 1.13rem);
+  font-family: "Inter", sans-serif;
+  color: #f5167e;
+  font-weight: 500;
+  text-align: left;
+  line-height: 1.5rem;
+}
+.event-details-container > .event-details-card > .infoContainer > .event-tickets > .btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: clamp(0.9375rem, 0.94vw, 0.94rem);
+  font-family: "Inter", sans-serif;
+  color: #ffffff;
+  font-weight: 500;
+  text-align: left;
+  line-height: 1.5rem;
+  border-radius: 0.5rem;
+  background-color: #242565;
+  padding: 1rem 2rem;
+}
+
 footer {
   width: 100%;
   background-color: #242565;

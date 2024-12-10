@@ -1049,6 +1049,222 @@
     }
 }
 
+
+// event details container
+@mixin EventDetailsContainer() {
+
+    > .event-details-card{
+        @include flexComp(column);
+        @include SectionPadding();
+        margin: 3.5rem 0rem;
+
+
+        > .event-image-container{
+            position: relative;
+            overflow: hidden;
+            width: 90%;
+            border-radius: 1rem;
+            margin-bottom: 1.5rem;
+    
+            > img {
+                object-fit: cover;
+                width: 100%;
+                border-radius: 1rem;
+            }
+        }
+
+        > .infoContainer{
+            @include flex(column);
+            gap: 1.5rem;
+            align-items: flex-start;
+            margin-bottom: 5rem;
+            
+
+            @media screen and (min-width: 768px) {
+                display: grid;
+                grid-template-columns: .75fr .25fr;
+                gap: 3rem;
+                justify-content: space-between;
+                padding: 0rem 3.5rem ;
+                
+            }
+
+            > .event-info{
+                @include flex(column);
+                gap: 1.5rem;
+                align-items: flex-start;
+
+                > .headerContainer{
+                    @include flex(column);
+                    gap: 0.5rem;
+
+                    > .event-title{
+                        @include fontSize28px();
+                        font-family: $poppins-font;
+                        color: $deep-indigo;
+                        font-weight: 600;
+                        text-align: left;
+                        line-height: 2.5rem;
+                        margin-top:2rem;
+
+                        @media screen and (min-width: 768px) {
+                            @include fontSize35px();
+                            
+                        }
+                    }
+                    > .about-this-event{
+                        @include fontSize20px();
+                        font-family: $inter-font;
+                        color: $black-clr;
+                        font-weight: 600;
+                        text-align: left;
+                        line-height: 1.5rem;
+                        margin-top: 1.5rem;
+
+                        @media screen and (min-width: 768px) {
+                            padding: 0rem 5% 0rem 0rem;
+                            
+                        }
+                    }
+                
+                    
+                    > .event-description{
+                        @include fontSize15px();
+                        font-family: $inter-font;
+                        color: $grey-clr;
+                        font-weight: 400;
+                        text-align: left;
+                        line-height: 1.5rem;
+                    }
+                }
+
+                > .eventOrganizerContainer{
+                    @include flex(column);
+                    gap: 0.5rem;
+                    background-color: $deep-indigo;
+                    padding: 1rem 2rem;
+                    color: $pureWhite;
+                    border-radius: 0.5rem; 
+                    @include fontSize18px();
+                    font-family: $poppins-font;
+                    font-weight: 600;
+                    align-items: flex-start;
+                }
+
+                > .eventDateContainer{
+                    @include flex(column);
+                    gap: 0.5rem;
+                    
+                    > .headerText{
+                        @include fontSize20px();
+                        font-family: $inter-font;
+                        color: $black-clr;
+                        font-weight: 600;
+                        text-align: left;
+                        line-height: 1.5rem;
+                        margin-top: 1.5rem;
+                    }
+
+                    > .event-date, .event-time{
+                        @include fontSize18px();
+                        font-family: $inter-font;
+                        color: $grey-clr;
+                        font-weight: 400;
+                        text-align: left;
+                        line-height: 1.5rem;
+                    }
+                }
+
+                > .event-venueContainer{
+                    @include flex(column);
+                    gap: 0.5rem;
+
+                    > .headerText{
+                        @include fontSize20px();
+                        font-family: $inter-font;
+                        color: $black-clr;
+                        font-weight: 600;
+                        text-align: left;
+                        line-height: 1.5rem;
+                        margin-top: 1.5rem;
+                    }
+
+                    > .event-venue{
+                        @include fontSize18px();
+                        font-family: $inter-font;
+                        color: $grey-clr;
+                        font-weight: 500;
+                        text-align: left;
+                        line-height: 1.5rem;
+                    }
+                }
+            }
+
+            > .event-tickets{
+                @include flex(column);
+                gap: 0.5rem;
+                border: 2px solid $deep-indigo;
+                border-radius: 0.5rem;
+                width: 20rem;
+                padding: 1rem;
+                align-items: flex-start;
+                background-color: $pureWhite;
+
+                > .headerText{
+                    @include fontSize20px();
+                    font-family: $inter-font;
+                    color: $black-clr;
+                    font-weight: 600;
+                    text-align: left;
+                    line-height: 1.5rem;
+                }
+
+                > .ticket-price{
+                    @include fontSize18px();
+                    font-family: $inter-font;
+                    color: $pink-clr;
+                    font-weight: 500;
+                    text-align: left;
+                    line-height: 1.5rem;
+                }
+
+                > .btn{
+                    
+                    @include flexComp(column);
+                    @include fontSize15px();
+                    font-family: $inter-font;
+                    color: $white-clr;
+                    font-weight: 500;
+                    text-align: left;
+                    line-height: 1.5rem;
+                    border-radius: .5rem;
+                    background-color: $deep-indigo;
+                    padding: 1rem 2rem;
+
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // main selectors
 .hero-section-home,
 .hero-section-events {
@@ -1097,6 +1313,10 @@
 
 .searchResultsContainer {
     @include EventContainer();
+}
+
+.event-details-container{
+    @include EventDetailsContainer();
 }
 
 footer {

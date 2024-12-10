@@ -304,7 +304,7 @@ $(document).ready(function () {
             const eventHTML = `
                 <a class="event-card" href="./event-details.html?id=${event.id}" target="_blank">
                     <div class="event-image-container">
-                       <img src="${event.images[0]?.url || ''}" alt="${event.images[0]?.alt || 'Event Image'}" class="event-image">
+                        <img src="${event.images[0]?.url || ''}" alt="${event.images[0]?.alt || 'Event Image'}" class="event-image">
                     </div>
                     <div class="event-info">
                         <div class="event-date">
@@ -328,7 +328,7 @@ $(document).ready(function () {
         // Reapply theme after creating buttons
         const currentTheme = localStorage.getItem("theme") || "light";
         applyTheme(currentTheme);
-        
+
     };
 
     // Function to filter events by category
@@ -501,12 +501,41 @@ $(document).ready(function () {
             // Populate the event details page with data
             $(".event-details-container").html(`
                 <div class="event-details-card">
-                    <img src="${event.images[0]?.url || ''}" alt="Event Image" class="event-image">
-                    <div class="event-info">
-                        <h1 class="event-title">${event.name}</h1>
-                        <p class="event-date">${event.date.month} ${event.date.day}, ${event.date.year}</p>
-                        <p class="event-venue">${event.venue?.name || 'Venue not available'}</p>
-                        <p class="event-description">${event.description}</p>
+                    <div class="event-image-container">
+                        <img src="${event.images[0]?.url || ''}" alt="Event Image" class="event-image">
+                    </div>
+                    <div class="infoContainer">
+                        <div class="event-info">
+                            <div class="headerContainer">
+                                <h1 class="event-title">${event.name}</h1>
+                                <p class="about-this-event">About this event</p>
+                                <p class="event-description">${event.description}</p>
+                            </div>
+                            <div class="eventOrganizerContainer">
+                                <p class="event-organizer">Organised by ${event.organizer.name}</p>
+                            </div>
+                            <div class="eventDateContainer">
+                                <article class="headerText">Date and Time</article>
+                                <p class="event-date">${event.date.day} ${event.date.month} ${event.date.year}</p>
+                                <p class="event-time">${event.time}</p>
+                            </div>
+                            <div class="event-venueContainer">
+                                <article class="headerText">Location</article>
+                                <p class="event-venue">${event.venue?.name || 'Venue not available'}</p>
+                                <p class="event-venue">${event.venue?.address || 'Address not available'}</p>
+                            </div>
+                        </div>
+                        <div class="event-tickets">
+                            <article class="headerText">Tickets</article>
+                            <p class="ticket-price">
+                                ${parseFloat(event.ticket.price) > 0
+                                                    ? `${event.ticket.price} ${event.ticket.currency || 'USD'}`
+                                                    : 'Free'
+                                }
+                            </p>
+
+                            <button class="btn buy-tickets">Reserve a spot</button>
+                        </div>
                     </div>
                 </div>
             `);
