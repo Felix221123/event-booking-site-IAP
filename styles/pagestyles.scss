@@ -1248,6 +1248,17 @@
 }
 
 
+// no results
+@mixin NoResults() {
+    @include flex(column);
+    color: $deep-indigo;
+    @include fontSize28px();
+    font-family: $poppins-font;
+    font-weight: 600;
+    text-align: center;
+    line-height: 1.5rem;
+    margin-top: 2rem;
+}
 
 
 
@@ -1318,6 +1329,11 @@
 .event-details-container{
     @include EventDetailsContainer();
 }
+
+.no-results{
+    @include NoResults();
+}
+
 
 footer {
     @include FooterSection();

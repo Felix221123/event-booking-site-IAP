@@ -1387,6 +1387,18 @@
   padding: 1rem 2rem;
 }
 
+.no-results {
+  display: flex;
+  flex-direction: column;
+  color: #242565;
+  font-size: clamp(1.75rem, 1.78vw, 1.79rem);
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  text-align: center;
+  line-height: 1.5rem;
+  margin-top: 2rem;
+}
+
 footer {
   width: 100%;
   background-color: #242565;
