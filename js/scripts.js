@@ -507,20 +507,20 @@ $(document).ready(function () {
                     <div class="infoContainer">
                         <div class="event-info">
                             <div class="headerContainer">
-                                <h1 class="event-title">${event.name}</h1>
-                                <p class="about-this-event">About this event</p>
+                                <h1 class="event-title dark-mode-clr">${event.name}</h1>
+                                <p class="about-this-event dark-mode-clr">About this event</p>
                                 <p class="event-description">${event.description}</p>
                             </div>
                             <div class="eventOrganizerContainer">
                                 <p class="event-organizer">Organised by ${event.organizer.name}</p>
                             </div>
                             <div class="eventDateContainer">
-                                <article class="headerText">Date and Time</article>
+                                <article class="headerText dark-mode-clr">Date and Time</article>
                                 <p class="event-date">${event.date.day} ${event.date.month} ${event.date.year}</p>
                                 <p class="event-time">${event.time}</p>
                             </div>
                             <div class="event-venueContainer">
-                                <article class="headerText">Location</article>
+                                <article class="headerText dark-mode-clr">Location</article>
                                 <p class="event-venue">${event.venue?.name || 'Venue not available'}</p>
                                 <p class="event-venue">${event.venue?.address || 'Address not available'}</p>
                             </div>
@@ -534,11 +534,15 @@ $(document).ready(function () {
                                 }
                             </p>
 
-                            <button class="btn buy-tickets">Reserve a spot</button>
+                            <button class="btn buy-tickets"> <a href="${event.event_link}" target="_blank">Reserve a spot</a></button>
                         </div>
                     </div>
                 </div>
             `);
+
+            // reapply theme
+            const currentTheme = localStorage.getItem("theme") || "light";
+            applyTheme(currentTheme);
 
         } catch (error) {
             console.error("Error fetching event data:", error);
