@@ -566,6 +566,23 @@
             }
         }
     }
+
+    > .copyright{
+        color: $white-clr;
+        font-family: $poppins-font;
+        @include fontSize18px();
+        padding-top: 2rem;
+        text-align: center;
+
+        > a{
+            color: $pink-clr;
+            
+            &:hover{
+                color: royalblue;
+                @include Transbtnhovers();
+            }
+        }
+    }
 }
 
 // contact main form

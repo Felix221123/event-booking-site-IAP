@@ -69,7 +69,7 @@ $(document).ready(function () {
             $(".dark-mode-clr").css("color", "#FFFFFF");
             $(".darkmode-bg-clr").css("background-color", "transparent");
 
-            $themeButton.text("Light ").append('<img src="../assets/svg/sun.svg" alt="sun icon" id="light-icon">');
+            $themeButton.text("Light ").append('<img src="/assets/svg/sun.svg" alt="sun icon" id="light-icon">');
             localStorage.setItem("theme", "dark");
 
         } else {
@@ -77,7 +77,7 @@ $(document).ready(function () {
                 "background-color": "white",
             });
             $(".dark-mode-clr").css("color", "");
-            $themeButton.text("Dark ").append('<img src="../assets/svg/moon.svg" alt="moon icon" id="dark-icon">');
+            $themeButton.text("Dark ").append('<img src="/assets/svg/moon.svg" alt="moon icon" id="dark-icon">');
             localStorage.setItem("theme", "light");
         }
 

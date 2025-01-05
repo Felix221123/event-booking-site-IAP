@@ -1535,4 +1535,18 @@ footer > .footerSection > .mailSection .mailBox button {
 }
 footer > .footerSection > .mailSection .mailBox button:hover {
   background-color: #ff1a60;
+}
+footer > .copyright {
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(1.125rem, 1.13vw, 1.13rem);
+  padding-top: 2rem;
+  text-align: center;
+}
+footer > .copyright > a {
+  color: #f5167e;
+}
+footer > .copyright > a:hover {
+  color: royalblue;
+  transition: 0.5s;
 }/*# sourceMappingURL=pagestyles.css.map */
