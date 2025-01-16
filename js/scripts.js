@@ -470,6 +470,8 @@ $(document).ready(function () {
                 const params = {};
                 const queryString = window.location.search;
                 const urlParams = new URLSearchParams(queryString);
+
+                // Add the query parameters to the object
                 urlParams.forEach((value, key) => {
                     params[key] = value;
                 });
